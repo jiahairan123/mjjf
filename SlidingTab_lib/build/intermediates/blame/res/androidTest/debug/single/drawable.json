@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\projectGithub\\mjjf\\SlidingTab_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\background_tab.xml",
+        "source": "D:\\projectGithub\\mjjf\\SlidingTab_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\background_tab.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Desktop\\project\\CunGuanKX\\CunGuanKX\\SlidingTab_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\background_tab.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\project\\CunGuanKX\\CunGuanKX\\SlidingTab_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\background_tab.xml"
     }

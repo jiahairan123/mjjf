@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CunGuanKX.iml" filepath="$PROJECT_DIR$/CunGuanKX.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlidingTab_lib/SlidingTab_lib.iml" filepath="$PROJECT_DIR$/SlidingTab_lib/SlidingTab_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mjjf.iml" filepath="$PROJECT_DIR$/mjjf.iml" />
     </modules>
   </component>
 </project>
