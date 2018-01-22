@@ -86,13 +86,13 @@ public class BannerAdapter extends PagerAdapter {
                     return;
                 }
                 //如果未登录 就跳转到登陆界面
-//                if (!CacheUtils.isLogin()) {
-//                    ToastUtil.showCenterGraToast("请先登录!");
-//                    Intent loginIntent = new Intent(mContext, LoginActivity.class);
-//                    loginIntent.putExtra(LoginActivity.KEY_START_TYPE, LoginActivity.START_TYPE_FINISH);
-//                    mContext.startActivity(loginIntent);
-//                    return;
-//                }
+                if (!CacheUtils.isLogin()) {
+                    ToastUtil.showCenterGraToast("请先登录!");
+                    Intent loginIntent = new Intent(mContext, LoginActivity.class);
+                    loginIntent.putExtra(LoginActivity.KEY_START_TYPE, LoginActivity.START_TYPE_FINISH);
+                    mContext.startActivity(loginIntent);
+                    return;
+                }
 
                 Intent intent = new Intent(mContext, PrivateActivity.class);
                 intent.putExtra("bannerTitle", mDatas.get(position).getTitle());
