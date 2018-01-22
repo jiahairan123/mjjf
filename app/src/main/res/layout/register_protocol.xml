@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="21dp"
+              android:orientation="horizontal"
+              android:paddingLeft="32dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ck_register_protocol"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:src="@mipmap/deal_select_true"
+            />
+
+        <TextView
+            style="@style/width_and_height_wrap_content"
+            android:layout_marginLeft="@dimen/y10"
+            android:text="@string/register_tv1"
+            android:textColor="#aaaaaa"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+    <!--使用条款-->
+    <TextView
+        android:id="@+id/tv_use_protocol"
+        style="@style/width_and_height_wrap_content"
+        android:text="@string/register_tv2"
+        android:textColor="#0077ff"
+        android:textSize="10sp"
+        />
+    <!--使用条款-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_use_protocol2"-->
+    <!--style="@style/width_and_height_wrap_content"-->
+    <!--android:text="《隐私条款》"-->
+    <!--android:textSize="10sp"-->
+    <!--android:textColor="#0077ff" />-->
+
+</LinearLayout>

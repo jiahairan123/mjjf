@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/public_title_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#5FB4F4">
+    <!--左边的按钮-->
+    <ImageView
+        android:id="@+id/iv_Left_public"
+        style="@style/public_title_iv_left"
+        android:src="@mipmap/backwhite" />
+
+    <TextView
+        android:id="@+id/return_to_new_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_Left_public"
+        android:text="返回存管"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <!--中间的标题-->
+    <TextView
+        android:id="@+id/tv_content_public"
+        style="@style/public_title_tv" />
+
+    <!--右边的按钮-->
+    <ImageView
+        android:id="@+id/iv_right_public"
+        style="@style/public_title_iv3"
+        android:layout_marginRight="@dimen/x30"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/tv_right_public"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="历史"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</RelativeLayout>

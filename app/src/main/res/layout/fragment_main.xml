@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.app.FragmentTabHost
+    android:id="@android:id/tabhost"
+    android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--每个Tab对应的内容-->
+        <FrameLayout
+            android:id="@+id/fra_main_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+        <!--tab的容器 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="@color/colorline"/>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_weight="0"
+            android:background="#FAFAFA"
+            android:showDividers="none"
+            >
+            <!--android:background="#FAFAFA"-->
+        </TabWidget>
+
+        <!--android自带的内容区域-->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+        </FrameLayout>
+    </LinearLayout>
+
+</android.support.v4.app.FragmentTabHost>

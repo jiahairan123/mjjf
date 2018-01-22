@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE8E8"
+
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/x1044"
+        android:layout_height="@dimen/y108"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+     >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_withdrawhis_bankname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="流水号："
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/swift_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="@color/color_public_division" />
+    <LinearLayout
+        android:layout_width="@dimen/x1044"
+        android:layout_height="@dimen/y160"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/y44"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/y26" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现金额"
+                android:textColor="@color/color_black_medium_light"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="4px"
+            android:layout_height="match_parent"
+            android:background="@color/color_public_division" />
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="356484"-->
+                    <!--android:textColor="@color/color_black_dark"-->
+                    <!--android:textSize="@dimen/y44"-->
+                <!--/>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="流水号"-->
+                <!--android:textColor="@color/color_black_medium_light"-->
+                <!--android:textSize="11sp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="4px"-->
+            <!--android:layout_height="@dimen/y112"-->
+            <!--android:background="@color/color_public_division" />-->
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提现成功"
+                    android:textColor="@color/color_red_light"
+                    android:textSize="@dimen/y44"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态"
+                android:textColor="@color/color_black_medium_light"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="@color/color_public_division" />
+
+    <LinearLayout
+        android:layout_width="@dimen/x1044"
+        android:layout_height="@dimen/y100"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x32"
+            android:text="提现时间：2016-6-15 13:23:12"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

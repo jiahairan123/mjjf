@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+
+    <!-- 我要投资产品列表Tab表标题数组-->
+    <string-array name="investment_list_tab_arr">
+        <item>@string/loan_list_title</item>
+        <item>@string/transfer_list_title</item>
+    </string-array>
+
+    <!-- 我要投资借款列表筛选条件-->
+    <string-array name="loan_list_screening_condition_arr">
+        <item>@string/loan_screening_condition_about_latest</item>
+        <item>@string/loan_screening_condition_about_rate</item>
+        <item>@string/loan_screening_condition_about_term</item>
+        <item>@string/loan_screening_condition_about_amount</item>
+    </string-array>
+
+    <!-- 我要投资债转列表筛选条件-->
+    <string-array name="transfer_list_screening_condition_arr">
+        <item>@string/loan_screening_condition_about_latest</item>
+        <item>@string/transfer_screening_condition_about_expire_income_rate</item>
+        <item>@string/transfer_screening_condition_about_surplus_term</item>
+    </string-array>
+
+    <!-- 借款信息Tab标题数组-->
+    <string-array name="loan_info_tab_arr">
+        <item>@string/loan_info_about_loan_desc</item>
+        <item>@string/loan_info_about_risk_info</item>
+        <item>@string/loan_info_about_user_material</item>
+    </string-array>
+
+
+    <!--银行名称列表-->
+    <string-array name="bankList">
+        <!--<item>其他</item>-->
+        <item>中国工商银行</item>
+        <item>中国农业银行</item>
+        <item>中国建设银行</item>
+        <item>招商银行</item>
+        <item>中国民生银行</item>
+        <item>交通银行</item>
+        <item>中国银行</item>
+        <item>中信银行</item>
+        <item>广发银行</item>
+        <item>兴业银行</item>
+        <item>华夏银行</item>
+        <item>上海银行</item>
+        <item>北京银行</item>
+        <item>中国光大银行</item>
+        <item>平安银行</item>
+        <item>中国信合</item>
+        <item>广州银行</item>
+        <item>南京银行</item>
+        <item>深圳发展银行</item>
+        <item>中国邮政储蓄银行</item>
+        <item>浦发银行</item>
+        <item>江苏银行</item>
+        <item>成都银行</item>
+        <item>成都农商银行</item>
+        <item>南充市商业银行</item>
+        <item>渤海银行</item>
+        <item>郑州银行</item>
+        <item>杭州银行</item>
+        <item>宁波银行</item>
+        <item>顺德农村商业银行</item>
+        <item>华融湘江银行</item>
+        <item>湖北银行</item>
+        <item>晋商银行</item>
+        <item>广州农商银行</item>
+        <item>包商银行</item>
+    </string-array>
+    <!--银行ICON-->
+    <string-array name="bankIcon">
+        <!--<item>未定义</item>-->
+        <item>@mipmap/bank_icbc_logo</item>
+        <item>@mipmap/bank_abc_logo</item>
+        <item>@mipmap/bank_ccb_logo</item>
+        <item>@mipmap/bank_cmb_logo</item>
+        <item>@mipmap/bank_cmbc_logo</item>
+        <item>@mipmap/bank_bocom_logo</item>
+        <item>@mipmap/bank_boc_logo</item>
+        <item>@mipmap/bank_citic_logo</item>
+        <item>@mipmap/bank_gdb_logo</item>
+        <item>@mipmap/bank_cib_logo</item>
+        <item>@mipmap/bank_hxbc_logo</item>
+        <item>@mipmap/bank_shb_logo</item>
+        <item>@mipmap/bank_bjb_logo</item>
+        <item>@mipmap/bank_ceb_logo</item>
+        <item>@mipmap/bank_payh_logo</item>
+        <item>@mipmap/bank_xinhe_logo</item>
+        <item>@mipmap/bank_gzb_logo</item>
+        <item>@mipmap/bank_njb_logo</item>
+        <item>@mipmap/bank_sdb_logo</item>
+        <item>@mipmap/bank_psbc_logo</item>
+        <item>@mipmap/bank_spdb_logo</item>
+        <item>@mipmap/bank_jsb_logo</item>
+        <item>@mipmap/bank_cdb_logo</item>
+        <item>@mipmap/bank_cdlsb_logo</item>
+        <item>@mipmap/bank_ncb_logo</item>
+        <item>@mipmap/bank_cbhb_logo</item>
+        <item>@mipmap/bank_zzb_logo</item>
+        <item>@mipmap/bank_hzb_logo</item>
+        <item>@mipmap/bank_nbcb_logo</item>
+        <item>@mipmap/bank_sdebank_logo</item>
+        <item>@mipmap/bank_hrxjbank_logo</item>
+        <item>@mipmap/bank_hubeibank_logo</item>
+        <item>@mipmap/bank_jinsbank_logo</item>
+        <item>@mipmap/bank_gznsbank_logo</item>
+        <item>@mipmap/bank_bsbank_logo</item>
+    </string-array>
+
+</resources>

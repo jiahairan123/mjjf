@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_blue"/>
+
+    <com.mingjie.jf.widgets.RefreshLayout
+        android:id="@+id/integral_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <ListView
+            android:id="@+id/lv_integral_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#00000000"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:paddingTop="8dp"
+            />
+    </com.mingjie.jf.widgets.RefreshLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/inputview_rootview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/shape_login_edtext"
+    >
+    <!--清除按钮-->
+    <ImageView
+        android:id="@+id/inputview_clear"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="11dp"
+        android:src="@mipmap/clean"
+
+        />
+
+    <LinearLayout
+        android:layout_toLeftOf="@id/inputview_clear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/inputview_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="11dp"
+            android:src="@mipmap/clean"
+
+            />
+        <!--输入框-->
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/inputview_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textColorHint="#8d8d8d"
+            android:textSize="15sp"
+            android:maxLength="25"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

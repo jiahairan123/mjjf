@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="@mipmap/coupons_banner" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_text_center"
+            android:text="抢券中心"
+            android:layout_centerInParent="true"
+            android:textColor="#56a7ed"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_text_center"
+            android:layout_centerVertical="true"
+            android:background="#56a7ed"
+            android:layout_width="66px"
+            android:layout_height="1px" />
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_text_center"
+            android:layout_centerVertical="true"
+            android:background="#56a7ed"
+            android:layout_width="66px"
+            android:layout_height="1px" />
+    </RelativeLayout>
+
+
+</LinearLayout>

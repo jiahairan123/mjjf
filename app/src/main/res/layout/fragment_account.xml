@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_account_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_public_background"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--已登陆-->
+                <LinearLayout
+                    android:id="@+id/linear_loging"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/account_background"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:weightSum="1">
+
+                    <include
+                        layout="@layout/public_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="156px" />
+                    <!--头部-->
+                    <include
+                        layout="@layout/account_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="240px" />
+                    <!--个人账户详情-->
+                    <LinearLayout
+                        android:id="@+id/account_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="272px"
+                        android:layout_marginTop="10px"
+                        android:background="@drawable/background_translect"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/user_title_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30px"
+                                    android:text="个人总资产"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+
+                                <TextView
+                                    android:id="@+id/user_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_money"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="0.00"
+                                    android:textColor="@color/white"
+                                    android:textSize="40px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_money"
+                                    android:layout_marginTop="10px"
+                                    android:layout_toRightOf="@id/user_money"
+                                    android:text="元"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="20px"
+                                android:layout_marginTop="20px"
+                                android:background="@drawable/background_translect" />
+
+                            <RelativeLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/user_title_available"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30px"
+                                    android:text="可用余额"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+
+                                <TextView
+                                    android:id="@+id/user_available"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_available"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="0.00"
+                                    android:textColor="@color/white"
+                                    android:textSize="40px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_available"
+                                    android:layout_marginTop="10px"
+                                    android:layout_toRightOf="@id/user_available"
+                                    android:text="元"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="20px"
+                                android:layout_marginTop="20px"
+                                android:background="@drawable/background_translect" />
+
+
+
+
+                            <RelativeLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/user_title_iceprice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30px"
+                                    android:text="冻结金额"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true" />
+
+                                <TextView
+                                    android:id="@+id/user_iceprice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_iceprice"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="0.00"
+                                    android:textColor="@color/white"
+                                    android:textSize="40px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_iceprice"
+                                    android:layout_marginTop="10px"
+                                    android:layout_toRightOf="@id/user_iceprice"
+                                    android:text="元"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5px"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_translect"
+                            android:orientation="horizontal">
+
+
+                            <RelativeLayout
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/user_title_back_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30px"
+                                    android:text="待回款金额"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+
+                                <TextView
+                                    android:id="@+id/user_back_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_back_money"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="0.00"
+                                    android:textColor="@color/white"
+                                    android:textSize="40px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_back_money"
+                                    android:layout_marginTop="10px"
+                                    android:layout_toRightOf="@id/user_back_money"
+                                    android:text="元"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="20px"
+                                android:layout_marginTop="20px"
+                                android:background="#16ffffff" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/user_ready_gain"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30px"
+                                    android:text="待回收收益"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+
+                                <TextView
+                                    android:id="@+id/user_reaygain_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_ready_gain"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="0.00"
+                                    android:textColor="@color/white"
+                                    android:textSize="40px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_ready_gain"
+                                    android:layout_marginTop="10px"
+                                    android:layout_toRightOf="@id/user_reaygain_money"
+                                    android:text="元"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+                            </RelativeLayout>
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="20px"
+                                android:layout_marginTop="20px"
+                                android:background="#16ffffff" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/user_title_total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30px"
+                                    android:text="累计收益金额"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+
+                                <TextView
+                                    android:id="@+id/user_total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_total"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="0.00"
+                                    android:textColor="@color/white"
+                                    android:textSize="40px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/user_title_total"
+                                    android:layout_marginTop="10px"
+                                    android:layout_toRightOf="@id/user_total"
+                                    android:text="元"
+                                    android:textColor="@color/white"
+                                    android:textSize="28px" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/activity_mycount_end"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="#000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+</RelativeLayout>

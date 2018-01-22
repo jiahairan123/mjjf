@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/public_title_rootview"
+    android:layout_width="match_parent"
+                android:background="#47a9f2"
+    android:layout_height="@dimen/y156">
+    <!--左边的按钮-->
+    <ImageView
+        android:id="@+id/iv_Left_public"
+        style="@style/public_title_iv_left"
+        android:src="@mipmap/backwhite" />
+
+    <!--中间的标题-->
+    <TextView
+        android:id="@+id/tv_content_public"
+        style="@style/public_title_tv" />
+
+    <!--右边的按钮-->
+    <ImageView
+        android:id="@+id/iv_right_public"
+        style="@style/public_title_iv2" />
+
+    <TextView
+        android:id="@+id/tv_right_public"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="历史"
+        android:textColor="@android:color/white"
+        android:textSize="21sp"
+        android:visibility="gone" />
+</RelativeLayout>

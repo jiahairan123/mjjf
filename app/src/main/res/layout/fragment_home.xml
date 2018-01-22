@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <!-- 首页-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0F1F5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#5FB4F4">
+
+                    <TextView
+                        android:text="首页"
+                        style="@style/public_title_tv"
+                        />
+
+                    <TextView
+                        android:id="@+id/return_to_old"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="返回旧版"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"/>
+                </RelativeLayout>
+
+                <!--没数据时显示-->
+                <FrameLayout
+                    android:id="@+id/fra_noDatas"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="@mipmap/loading"
+                    android:visibility="visible"/>
+
+                <!--显示banner-->
+                <RelativeLayout
+                    android:id="@+id/relative_showBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:visibility="gone">
+                    <!--自动轮播图-->
+                    <com.mingjie.jf.widgets.AutoScrollViewPager
+                        android:id="@+id/autoViewPager_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"/>
+                    <!--点容器-->
+                    <LinearLayout
+                        android:id="@+id/ll_home_container_dot"
+                        style="@style/Dot_home"></LinearLayout>
+                </RelativeLayout>
+
+                <!--最新公告-->
+                <RelativeLayout
+                    android:id="@+id/relative_home_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:background="@android:color/white"
+                    android:paddingLeft="@dimen/x30">
+                    <!--公告喇叭-->
+                    <ImageView
+                        android:id="@+id/iv_home_notice"
+                        android:layout_width="21dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/new_told"/>
+
+                    <!--右侧箭头-->
+                    <ImageView
+                        android:id="@+id/iv_home_arrow"
+                        android:layout_width="10dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/right_arrow_icon"/>
+
+                    <!--最新公告-->
+                    <ViewFlipper
+                        android:id="@+id/viewFlipper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/iv_home_notice"
+                        android:layout_toLeftOf="@+id/iv_home_arrow">
+
+                    </ViewFlipper>
+                </RelativeLayout>
+
+                <include layout="@layout/item_fragment_home_platform_data"/>
+
+                <ImageView
+                    android:id="@+id/im_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="6dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/debug_hongbao_icon"
+                    android:visibility="gone"/>
+
+                <!--<include -->
+                <!--android:id="@+id/"-->
+                <!--layout="@layout/item_fragment_home_product" />-->
+
+                <include
+                    android:id="@+id/layout_obj0"
+                    layout="@layout/item_fragment_home_product"
+                    android:visibility="gone"/>
+
+                <include
+                    android:id="@+id/layout_obj1"
+                    layout="@layout/item_fragment_home_product_debts"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/linear_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/base_margin3"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_error_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/null_data"/>
+
+                    <TextView
+                        android:id="@+id/tv_error_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

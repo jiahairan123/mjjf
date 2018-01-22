@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_product_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/bcgroud"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/public_title_blue_loandetail" />
+
+                    <include layout="@layout/public_invest_title" />
+
+                    <!--进度条-->
+                    <com.mingjie.jf.view.progressview.DonutProgressView
+                        android:id="@+id/progress_loanDetail"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_circle_white_background"
+                        app:donut_finished_color="@color/color_red_light"
+                        app:donut_finished_stroke_width="5dp"
+                        app:donut_max="100"
+                        app:donut_suffix_text="%"
+                        app:donut_text_color="@color/color_red_light"
+                        app:donut_unfinished_color="@color/color_public_background"
+                        app:donut_unfinished_stroke_width="5dp" />
+                    <!--借款信息-->
+                    <include layout="@layout/public_loan_detail" />
+
+                </LinearLayout>
+                <!--借款状态-->
+                <include layout="@layout/public_loan_detail_status"/>
+
+                <!--立即登录购买-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/cut_line_loaddetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/color_public_background"/>
+
+                    <TextView
+                        android:id="@+id/tv_login_buy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="59dp"
+                        android:layout_below="@id/cut_line_loaddetail"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="立即登录购买"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_below="@id/tv_login_buy"
+                        android:background="@color/color_public_background"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/right_arrow_icon"/>
+                </RelativeLayout>
+
+                <!--发标状态-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/cut_line_loaddetail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/color_public_background"/>
+
+                    <ImageView
+                        android:id="@+id/iv_mark_status_icon"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="#00ff00"/>
+
+                    <TextView
+                        android:id="@+id/tv_mark_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="59dp"
+                        android:layout_below="@id/cut_line_loaddetail2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/iv_mark_status_icon"
+                        android:gravity="center_vertical"
+                        android:text="对不起！该标当前状态为“准备发布”不可进行投标。"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_below="@id/tv_mark_status"
+                        android:background="@color/color_public_background"/>
+                </RelativeLayout>
+
+                <!--立即购买-->
+                <LinearLayout
+                    android:id="@+id/linear_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <!--分割线-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/color_public_background"/>
+
+                    <!--最佳投标金额  可用余额-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_available_balance"
+                            android:layout_width="0dp"
+                            android:layout_height="34dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="可用余额："
+                            android:textColor="@color/xiao_black"
+                            android:textSize="12sp"/>
+
+                        <Button
+                            android:id="@+id/recharge"
+                            android:layout_width="@dimen/x208"
+                            android:layout_height="@dimen/y78"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/x50"
+                            android:background="@drawable/select_btn_buy_product"
+                            android:text="充值"
+                            android:textColor="@color/text_blue"
+                            android:textSize="34px"/>
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/tv_best_bid_amount"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:textColor="#0000FF"-->
+                        <!--android:text="最佳投标金额"/>-->
+                    </LinearLayout>
+
+                    <!--输入投标金额-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invest_money"/>
+
+                        <EditText
+                            android:id="@+id/et_loan_investMoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp"
+                            android:background="@drawable/shape_login_edtext"
+                            android:hint="￥请输入投标金额"
+                            android:inputType="numberDecimal"
+                            android:maxLength="12"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="#aaaaaa"
+                            android:textSize="14sp"/>
+
+
+                    </LinearLayout>
+
+                    <!--优惠券 -->
+                    <LinearLayout
+                        android:id="@+id/ll_cash"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cash_coupon"/>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_coupon"
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp">
+
+                            <TextView
+                                android:id="@+id/tv_coupon"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/shape_login_edtext"
+                                android:gravity="center_vertical"
+                                android:maxLength="12"
+                                android:paddingLeft="10dp"
+                                android:clickable="false"
+                                android:textColor="@color/color_black_light"
+                                android:textSize="14sp"/>
+
+                            <ImageView
+                                android:id="@+id/iv_counter_arrow1"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="14dp"
+                                android:src="@mipmap/down_arrow_icon"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <!-- 总收益 -->
+                    <TextView
+                        android:id="@+id/tv_loan_Income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="10sp"
+                        android:text="总收益：0.00元"
+                        android:textColor="@color/color_black_light"/>
+
+
+                    <!--输入投标密码-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp">
+
+                        <EditText
+                            android:id="@+id/et_loan_psd"
+                            android:layout_width="165dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_login_edtext"
+                            android:hint="请输入投标密码"
+                            android:inputType="textPassword"
+                            android:maxLength="20"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="#aaaaaa"
+                            android:textSize="14sp"
+                            android:visibility="gone"/>
+
+                        <Button
+                            android:id="@+id/btn_loan_buy"
+                            android:layout_width="165dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="@dimen/y20"
+                            android:background="@drawable/user_login_edtext"
+                            android:text="立即投标"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/y30"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp">
+
+                        <!--<CheckBox-->
+                        <!--android:id="@+id/cb_loan_protocol"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:checked="true" />-->
+
+                        <LinearLayout
+                            android:id="@+id/ll_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/cb_loan_protocol"
+                                android:layout_width="@dimen/x50"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/deal_select_true"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/x30"
+                                android:text="我已阅读并同意"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/tv_loan_protocol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="《服务协议》"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/tv_jiekuan_protocol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="《借款协议》"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_zixunfuwu_protocol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="《咨询服务协议》"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"/>
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="》"-->
+                        <!--android:textSize="12sp"/>-->
+                    </LinearLayout>
+
+                    <!--输入密码 和 立即投资 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp">
+
+                        <EditText
+                            android:id="@+id/et_loan_investpass"
+                            android:layout_width="165dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="请输入投标密码"
+                            android:inputType="textPassword"
+                            android:maxLength="20"
+                            android:paddingLeft="10dp"
+                            android:visibility="gone"/>
+
+                        <!--
+                        <Button
+                            android:id="@+id/btn_loan_buy"
+                            android:layout_width="165dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="@dimen/y20"
+                            android:background="@drawable/user_login_edtext"
+                            android:text="立即投标"
+                            android:textColor="@android:color/white" />
+                            -->
+                    </LinearLayout>
+                    <!--同意协议-->
+
+                    <!--分割线-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/color_public_background"/>
+                </LinearLayout>
+                <!--未登陆-->
+                <LinearLayout
+                    android:id="@+id/linear_loan_nologin"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/color_public_background"/>
+
+                    <TextView
+                        android:id="@+id/tv_loan_tologin"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="立即登录购买"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/color_public_background"/>
+                </LinearLayout>
+
+                <!--不能投标-->
+                <LinearLayout
+                    android:id="@+id/linear_loan_unInvest"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/color_public_background"/>
+
+                    <TextView
+                        android:id="@+id/tv_loan_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@android:color/white"
+                        android:drawableLeft="@mipmap/warn"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="25dp"
+                        android:text="对不起！该标当前状态为“招标审核”不可进行投标"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/color_public_background"/>
+                </LinearLayout>
+
+
+
+                <!--借款信息-->
+                <com.mingjie.jf.view.AccountMenuContentItemView
+                    android:id="@+id/loan_info"
+                    style="@style/width_and_height_wrap_content"
+                    app:LeftIconSrc="@mipmap/loan_detail_loan_info"
+                    app:isShowLeftIcon="true"
+                    app:middleTitleText="借款信息"
+                    app:middleTitleTextSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@color/color_public_division"/>
+
+                <!--转让记录-->
+                <com.mingjie.jf.view.AccountMenuContentItemView
+                    android:id="@+id/equit_record"
+                    style="@style/width_and_height_wrap_content"
+                    android:visibility="gone"
+                    app:LeftIconSrc="@mipmap/zhuan_record"
+                    app:isShowLeftIcon="true"
+                    app:middleTitleText="转让记录"
+                    app:middleTitleTextSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@color/color_public_division"/>
+
+                <!--安全保障-->
+                <com.mingjie.jf.view.AccountMenuContentItemView
+                    android:id="@+id/safe_deal"
+                    style="@style/width_and_height_wrap_content"
+                    app:LeftIconSrc="@mipmap/safe_gua"
+                    app:isShowLeftIcon="true"
+                    app:middleTitleText="安全保障"
+                    app:middleTitleTextSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@color/color_public_division"/>
+
+
+
+                <!--还款计划-->
+                <com.mingjie.jf.view.AccountMenuContentItemView
+                    android:id="@+id/loan_return_plan"
+                    style="@style/width_and_height_wrap_content"
+                    app:LeftIconSrc="@mipmap/loan_detail_repayment_plan"
+                    app:isShowLeftIcon="true"
+                    app:middleTitleText="还款计划"
+                    app:middleTitleTextSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@color/color_public_division"/>
+
+
+                <!--投标记录-->
+                <com.mingjie.jf.view.AccountMenuContentItemView
+                    android:id="@+id/loan_investHistory"
+                    style="@style/width_and_height_wrap_content"
+                    app:LeftIconSrc="@mipmap/loan_detail_toubiao_record"
+                    app:isShowLeftIcon="true"
+                    app:middleTitleText="投标记录"
+                    app:middleTitleTextSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@color/color_public_division"/>
+
+
+                <!--投标记录-->
+                <com.mingjie.jf.view.AccountMenuContentItemView
+                    android:id="@+id/loan_person_info_follow"
+                    style="@style/width_and_height_wrap_content"
+                    app:LeftIconSrc="@mipmap/loan_info_followperson"
+                    app:isShowLeftIcon="true"
+                    app:middleTitleText="借款人借款信息跟踪"
+                    app:middleTitleTextSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@color/color_public_division"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

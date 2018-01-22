@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+
+    <include layout="@layout/public_title_blue"/>
+    <RelativeLayout
+        android:id="@+id/counter_repayment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/tv_counter_fashion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="还款方式："
+            android:textColor="@color/xiao_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_counter_fashion_result1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_counter_fashion1"
+            android:background="@null"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:text="按月等额本息还款"
+            android:textColor="@color/xiao_black"
+            android:textSize="15sp" />
+
+        <!--箭头-->
+        <ImageView
+            android:id="@+id/iv_counter_arrow1"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x87"
+            android:src="@mipmap/down_arrow_icon"
+            android:visibility="visible" />
+        />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_public_background" />
+
+    <com.mingjie.jf.view.IncomeCalculatorItemView
+        android:id="@+id/counter_money"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:Left_text="投资金额："
+        app:calculator_ed_type="numberDecimal"
+        app:isShowArrow="false"
+        app:right_text="元" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_public_background" />
+
+    <com.mingjie.jf.view.IncomeCalculatorItemView
+        android:id="@+id/counter_year_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:Left_text="年收益率："
+        app:calculator_ed_type="numberDecimal"
+        app:isShowArrow="false"
+        app:right_text="%" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_public_background" />
+
+    <com.mingjie.jf.view.IncomeCalculatorItemView
+        android:id="@+id/counter_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:Left_text="投资期限："
+        app:calculator_ed_type="phone"
+        app:isShowArrow="false"
+        app:right_text="月" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_public_background" />
+
+    <com.mingjie.jf.view.IncomeCalculatorItemView
+        android:id="@+id/counter_service_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:Left_text="服务费率："
+        app:calculator_ed_type="numberDecimal"
+        app:isShowArrow="false"
+        app:right_text="%" />
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/color_public_division" />
+
+    <!--计算收益-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_proceed_type"
+                style="@style/calculator_tv_type"
+                android:textColor="@color/xiao_black"
+                android:text="总共收益：" />
+
+            <TextView
+                android:id="@+id/tv_counter_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/color_red_light"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@color/xiao_black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right">
+
+                <Button
+                    android:id="@+id/btn_counter"
+                    style="@style/calculator_btn_type"
+                    android:textSize="16sp"
+                    android:text="计算" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37.5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_accrual_type"
+                style="@style/calculator_tv_type"
+                android:textColor="@color/xiao_black"
+                android:text="净赚收益：" />
+
+            <TextView
+                android:id="@+id/tv_accrual_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/color_red_light"
+                android:textSize="17sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@color/xiao_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37.5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_accrual1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服  务  费："
+                android:textColor="@color/xiao_black"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_accrual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/color_red_light"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@color/xiao_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/color_public_background" />
+    <!--还款详情-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:text="期数"
+            android:textColor="@color/xiao_black"
+
+            />
+
+        <TextView
+            style="@style/calculator_tv_detail"
+            android:gravity="center_horizontal"
+            android:textColor="@color/xiao_black"
+            android:text="本金" />
+
+        <TextView
+            style="@style/calculator_tv_detail"
+            android:gravity="center_horizontal"
+            android:textColor="@color/xiao_black"
+            android:text="利息" />
+
+        <TextView
+            style="@style/calculator_tv_detail"
+            android:gravity="center_horizontal"
+            android:textColor="@color/xiao_black"
+            android:text="还款总额" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_public_background" />
+
+    <ListView
+        android:id="@+id/listview_counter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"></ListView>
+</LinearLayout>

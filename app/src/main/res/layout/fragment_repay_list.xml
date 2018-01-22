@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:orientation="vertical">
+
+    <com.mingjie.jf.widgets.RefreshLayout
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+        <ListView
+            android:id="@+id/listview_investlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:paddingTop="8dp" />
+    </com.mingjie.jf.widgets.RefreshLayout>
+
+</LinearLayout>

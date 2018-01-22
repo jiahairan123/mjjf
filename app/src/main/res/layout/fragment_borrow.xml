@@ -1,0 +1,461 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/public_title_blue"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_account_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="882px"
+        android:layout_height="126px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/username"/>
+
+        <!--输入用户名-->
+        <com.mingjie.jf.view.LimitEditText
+            android:id="@+id/edt_user_register_name"
+            android:layout_width="882px"
+            android:layout_height="126px"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/user"
+            android:background="@null"
+            android:hint="姓    名"
+            android:maxLength="12"
+            android:textColorHint="#aaaaaa"
+            android:textSize="40px"
+
+            />
+    </RelativeLayout>
+
+
+    <View
+
+        android:layout_width="882px"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorline"/>
+
+
+    <RelativeLayout
+        android:layout_width="882px"
+        android:layout_height="126px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/telephone"/>
+        <!--输入密码-->
+        <EditText
+            android:id="@+id/register_input_resetpass_pass_affirm"
+            android:layout_width="882px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/phone"
+            android:background="@null"
+            android:hint="手机号码"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:textColorHint="#aaaaaa"
+            android:textSize="40px"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="882px"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorline"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_borrow_item_edit"
+        android:layout_width="882px"
+        android:layout_height="126px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/pswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/pswd"/>
+        <!--输入密码-->
+        <EditText
+            android:id="@+id/edt_user_register_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/pswd"
+            android:background="@null"
+            android:focusable="false"
+            android:clickable="false"
+            android:hint="性    别"
+            android:textColorHint="#aaaaaa"
+            android:textSize="40px"/>
+
+        <RelativeLayout
+            android:id="@+id/iv_borrow_sex_down"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_sex_arrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/down"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="882px"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorline"/>
+
+
+    <RelativeLayout
+        android:layout_width="882px"
+        android:layout_height="126px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_menu_item_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/pswd2"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/pswd2"/>
+        <!--输入密码-->
+        <EditText
+            android:id="@+id/input_register_affimPassword"
+            android:layout_width="530px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/pswd2"
+            android:background="@null"
+            android:hint="确认密码"
+            android:textColorHint="#aaaaaa"
+            android:textSize="40px"/>
+
+        <ImageView
+            android:id="@+id/re_visiable1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/close_visiable"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="882px"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorline"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="882px"
+        android:layout_height="126px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/register_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/true_age"/>
+        <!--输入密码-->
+        <EditText
+            android:id="@+id/input_resetpass_verifycode"
+            android:layout_width="882px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/register_check"
+            android:background="@null"
+            android:hint="真实年龄"
+            android:maxLength="3"
+            android:inputType="number"
+            android:textColorHint="#aaaaaa"
+            android:textSize="40px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="882px"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorline"/>
+    <!--借款用途-->
+    <RelativeLayout
+        android:layout_width="882px"
+        android:layout_height="126px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_borrow_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/borrow_use"/>
+        <!--输入密码-->
+        <EditText
+            android:id="@+id/input_borrow_use"
+            android:layout_width="882px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/iv_borrow_use"
+            android:background="@null"
+            android:maxLength="16"
+            android:hint="借款用途"
+            android:textColorHint="#aaaaaa"
+            android:textSize="40px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="882px"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorline"/>
+
+    <!--承接公司-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/iv_down_chengjie"
+        android:layout_width="882px"
+        android:layout_height="126px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_chengjie_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/chengjie_unit"/>
+        <!--输入密码-->
+        <EditText
+            android:id="@+id/input_chengjie_company"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/iv_chengjie_company"
+            android:background="@null"
+            android:focusable="false"
+            android:hint="承接公司"
+            android:textColorHint="#aaaaaa"
+            android:textSize="40px"/>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_chengjie_unit_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/down"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/chengjie_line"
+        android:layout_width="882px"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorline"/>
+
+    <!--借款金额-->
+    <RelativeLayout
+        android:layout_width="882px"
+        android:layout_height="126px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_borrow_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/borrower_money"/>
+        <!--输入密码-->
+        <EditText
+            android:id="@+id/input_borrow_money"
+            android:layout_width="882px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/iv_borrow_money"
+            android:background="@null"
+            android:hint="借款金额"
+            android:maxEms="12"
+            android:maxLength="12"
+            android:inputType="numberDecimal"
+            android:textColorHint="#aaaaaa"
+            android:textSize="40px"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="882px"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorline"/>
+
+    <RelativeLayout
+        android:layout_width="882px"
+        android:layout_height="126px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/messager"/>
+        <!--输入密码-->
+        <EditText
+            android:id="@+id/input_register_verifycode"
+            android:layout_width="440px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@id/check"
+            android:background="@null"
+            android:hint="验证码"
+            android:maxLength="8"
+            android:textColorHint="#aaaaaa"
+            android:textSize="40px"/>
+
+        <ImageView
+            android:id="@+id/res_imverificationcode"
+            android:layout_width="280px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/code_err"
+            />
+
+        <!--<com.minghao.cgkx.view.MateralButton-->
+        <!--android:id="@+id/verificationcode"-->
+        <!--android:layout_width="@dimen/x280"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginBottom="3dp"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:background="@drawable/user_login_edtext"-->
+        <!--android:text="@string/register_tv13"-->
+        <!--android:textColor="@color/white"/>-->
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="882px"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:background="@color/colorline"/>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="您提交的资料完全保密,详见"
+            android:textColor="#AFADAD"/>
+
+        <TextView
+            android:id="@+id/tv_private_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="《隐私政策》"
+            android:textColor="#4780F5"/>
+
+    </LinearLayout>
+
+            <com.mingjie.jf.view.MateralButton
+                android:id="@+id/btn_submit"
+                android:layout_width="882px"
+                android:layout_height="116px"
+                android:layout_gravity="center"
+                android:layout_marginTop="40px"
+                android:background="@drawable/user_login_edtext"
+                android:gravity="center"
+                android:text="提交申请"
+                android:textColor="@color/white"
+                android:textSize="45px" />
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_backgrouding"></LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

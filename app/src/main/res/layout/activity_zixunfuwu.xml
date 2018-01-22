@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/srcoll_zixunfuwu_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/public_title_blue" />
+
+
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="出借人咨询服务协议    \n" />
+
+
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="9px"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="\n\n合同编号:
+        \n甲    方（铭捷金服交易平台）：铭捷财富（北京）互联网信息服务有限公司
+        \n地    址：北京市海淀区清河三街72号24号楼1层1184室
+        \n代 理 人：李伟（总经理）
+        \n代理人铭捷金服网站用户名：liwei
+        \n乙    方(出借人)：______
+        \n铭捷金服网站用户名：______
+        \n身份证号：______
+        \n电    话：______
+        \n电子邮箱：______
+        \n鉴于：
+        \n 1、甲方为一家从事互联网金融咨询服务的专业性公司，其经营的铭捷金服网络平台（域名：www.mingjiecf.com）作为综合金融服务平台，为客户提供资金融通的信息发布、居间撮合、资金监管与划转等中介服务；
+        \n 2、乙方为铭捷金服网络平台的注册用户，有资金出借的投资需求；
+        \n 3、甲方同意向乙方提供投资咨询及居间撮合、资金监管与划转等服务，通过其经营的铭捷金服网络平台，为乙方推荐经过资信审查的有借款需求的客户，并提供与借款相关的居间撮合、协议见证及对相关款项的监管、冻结、代收、代转、贷后管理等服务。
+        \n依据《中华人民共和国合同法》及其他相关法律法规，甲、乙双方经协商一致，就甲方向乙方提供资金出借的投资咨询及居间撮合、资金监管与划转、贷后管理等服务事宜，达成如下协议：
+        \n第一条 服务方式
+        \n 1、甲方将通过资信审查的有借款需求的客户借款信息，通过铭捷金服网络平台发布，供乙方进行投资选择。
+        \n 2、鉴于借款人与乙方就借款事宜不直接当面接触，为保证交易资金安全，甲方以自己的名义在第三方支付公司（下称“支付公司”）开立监管账户（以下简称“监管帐户”），作为交易资金的托管账户；为方便交易资金结算及提现，甲方分别为借款人和乙方开立平台账户（下称“借款人平台账户”和“乙方平台账户”）。前述平台账户作为乙方将出借资金支付给借款人及借款人将借款本息偿还给乙方的中转账户，甲方同时提供相关款项冻结及代收代付的服务。
+        \n 3、如乙方拟向甲方通过铭捷金服网络平台推荐的借款人出借款项，应在本合同签署前将拟出借款项汇入监管账户，由甲方于同日将借款金额计入乙方平台账户；乙方平台账户内的款项在筹标期间被冻结，乙方不得要求返还或申请用于投资其他项目；如筹标期满流标，甲方解除该等款项的冻结,乙方可自行选择投资其他项目或提现。
+        \n第二条 甲方的权利与义务
+        \n 1、甲方应在借款合同生效之次工作日，将乙方平台账户中的出借款项计入借款人平台账户，完成乙方资金的出借；借款人按照借款合同约定将应向乙方偿还的借款本息汇入监管账户的当日，甲方应将相关款项计入借款人平台账户，并于计入借款人平台账户之次工作日，将借款人的还款金额计入乙方平台账户，完成借款人的还款。
+        \n 2、就本协议约定的投资咨询及居间服务，甲方有权向乙方收取平台服务费。
+        \n第三条 乙方的权利和义务
+        \n 1、乙方对是否向甲方通过铭捷金服网络平台推荐的借款人提供借款有自主决定权，因借款所产生的风险由乙方自行负担；
+        \n 2、乙方应按本协议的约定向甲方支付平台服务费。
+        \n 3、乙方对在本协议签署及履行过程中所获知的甲方的商业秘密，应依法予以保密。
+        \n 4、乙方应保证其通过铭捷金服出借的资金为其合法所有，不得通过铭捷金服平台从事洗钱等违法行为。
+        \n 5、乙方应妥善保管其在铭捷金服网络平台上的用户名和密码，通过该用户名和密码登录的任何操作均视为乙方的行为,均系乙方的真实意思表示，所产生的一切法律后果由乙方自行负担。
+        \n第四条 平台服务费
+        \n 就甲方向乙方提供的咨询居间服务，甲方按以下标准和方式向乙方收取平台服务费：
+        \n 1、收费标准：
+        \n （1）如借款人依借款合同约定按时足额还款，或保证人依据保证合同替借款人偿还借款本息，甲方按每期回款金额或保证人代偿金额的0.000%，向乙方收取平台服务费。
+        \n （2）如因借款人违约乙方解除借款合同或借款人申请提前还款，甲方按全部借款金额的0.000%，向乙方收取平台服务费。
+        \n 2、收费方式：
+        \n 乙方应向甲方支付的平台服务费，乙方授权甲方按照本协议约定计算的金额从应向乙方转付的每期回款中进行相应扣款。
+        \n第五条 争议解决方式
+        \n 甲、乙双方在协议履行过程中如有争议，应协商解决。协商不成，向甲方所在地的人民法院提起诉讼。
+        \n第六条 其他
+        \n  本协议经甲、乙双方通过铭捷金服平台电子合同签署系统签署后生效。
+        \n甲方：铭捷财富（北京）互联网信息服务有限公司
+        \n代理人：李伟（总经理）
+        \n日期：______
+        \n乙方：______
+        \n日期：______
+        \n
+        \n
+        \n
+        \n
+        \n" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

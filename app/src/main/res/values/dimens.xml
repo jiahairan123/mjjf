@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="left_menu_text">17sp</dimen>
+
+    <!-- hexiangjun-->
+    <!-- margin -->
+    <dimen name="base_margin0">2dp</dimen>
+    <dimen name="base_margin1">4dp</dimen>
+    <dimen name="base_margin2">6dp</dimen>
+    <dimen name="base_margin3">8dp</dimen>
+    <dimen name="base_margin4">10dp</dimen>
+    <dimen name="base_margin5">12dp</dimen>
+    <dimen name="base_margin6">14dp</dimen>
+    <dimen name="base_margin7">16dp</dimen>
+
+    <!-- textsize -->
+    <dimen name="text_size0">12sp</dimen>
+    <dimen name="text_size1">14sp</dimen>
+    <dimen name="text_size2">16sp</dimen>
+    <dimen name="text_size3">18sp</dimen>
+    <dimen name="text_size4">20sp</dimen>
+    <dimen name="text_size5">22sp</dimen>
+    <dimen name="text_size6">24sp</dimen>
+
+    <!-- keyboard -->
+    <dimen name="key_height">50.0dip</dimen>
+</resources>

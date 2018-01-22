@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_01"
+        layout="@layout/public_title_blue"/>
+
+    <com.mingjie.jf.widgets.RefreshLayout
+        android:layout_below="@+id/include_01"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <!--<ScrollView-->
+        <!--android:id="@+id/sv_scoll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbars="none"-->
+        <!--&gt;-->
+        <ListView
+            android:id="@+id/listview_mark_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"/>
+
+        <!--</ScrollView>-->
+    </com.mingjie.jf.widgets.RefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/include_01"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="被推荐人"
+            android:textSize="12sp"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_mark_tab2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/recommend_relation"-->
+            <!--android:textSize="12sp"/>-->
+
+        <TextView
+            android:id="@+id/tv_mark_tab3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/touzi_money"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_mark_tab4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/register_time"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

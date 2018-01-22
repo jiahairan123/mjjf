@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="200dp"
+              android:layout_gravity="center"
+              android:background="@drawable/shape_quit_dialog"
+              android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/color_red_light"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_dialog_content"
+        style="@style/Quit_tv"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_quit_cutline"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            style="@style/Quit_btn"
+            android:background="@drawable/select_quit_dialog_btnleft"
+            android:text="@string/widget_quit_tv3"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_quit_cutline"/>
+
+        <Button
+            android:id="@+id/btn_dialog_enter"
+            style="@style/Quit_btn"
+            android:background="@drawable/select_quit_dialog_btnright"
+            android:text="@string/widget_quit_tv4"
+            />
+    </LinearLayout>
+</LinearLayout>

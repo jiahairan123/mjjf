@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+
+<div style="margin:auto;line-height:200px;text-align:center">
+    <span style="font-size:20px;">页面跳转中,请稍等...</span>
+</div>
+
+<form id="myForm" method="post" style="display:none">
+    <input id="transCode" name="transCode" type="text"/>
+    <input id="RequestData" name="RequestData" type="text"/>
+</form>
+<script language=JavaScript>
+		function onSubmit(url,transCode,requestData){
+			document.getElementById('transCode').value = transCode;
+			document.getElementById('RequestData').value = requestData;
+			document.getElementById('myForm').action = url;
+			document.getElementById('myForm').submit();
+		}
+</script>
+</body>
+</html>

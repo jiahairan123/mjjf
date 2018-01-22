@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/shape_invest_tab_background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/invest_tab1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/shape_invest_tab_left_select"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_invest_tab_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/invest_arrow_down"
+            android:text="最新"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invest_tab2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/shape_invest_tab_mid_normal"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_invest_tab_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/left_menu_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invest_tab3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/shape_invest_tab_mid_normal"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_invest_tab_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/left_menu_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invest_tab4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/shape_invest_tab_right_normal"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_invest_tab_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/left_menu_text" />
+    </LinearLayout>
+
+</LinearLayout>

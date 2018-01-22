@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <!-- 借款描述-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <!--借款人-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="借款人："
+                android:textColor="@color/color_black_medium_light"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_loaninfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小伍"
+                android:textColor="@color/color_black_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!--借款人所在地区-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="借款人所在地区："-->
+                <!--android:textColor="@color/color_black_medium_light"-->
+                <!--android:textSize="@dimen/y44" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="深圳"-->
+                <!--android:textColor="@color/color_black_dark"-->
+                <!--android:textSize="@dimen/y44" />-->
+        <!--</LinearLayout>-->
+        <!--借款用途-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="借款用途："
+                android:textColor="@color/color_black_medium_light"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_loanuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="讨老婆"
+                android:textColor="@color/color_black_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!--还款保障-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="还款保障："-->
+                <!--android:textColor="@color/color_black_medium_light"-->
+                <!--android:textSize="@dimen/y44" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="讨一送两"-->
+                <!--android:textColor="@color/color_black_dark"-->
+                <!--android:textSize="@dimen/y44" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x36"
+            android:layout_height="@dimen/y3"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="@dimen/x394"
+            android:layout_height="@dimen/y82"
+            android:background="@drawable/shape_loan_detail_loan_info"
+            android:gravity="center"
+            android:text="借款详情"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+    <!--描述-->
+    <WebView
+        android:id="@+id/web_loan_info_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y108"
+        android:paddingLeft="@dimen/x25"
+        android:paddingRight="@dimen/x30">
+
+        <ImageView
+            android:id="@+id/iv_objtype"
+            android:layout_width="@dimen/x72"
+            android:layout_height="@dimen/y72"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/invest_type_level"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/buy_btn"
+            android:layout_toRightOf="@id/iv_objtype"
+            android:paddingLeft="@dimen/x25"
+            android:layout_marginRight="100dp"
+            android:singleLine="true"
+            android:text="担保标担保标担保担保标担保标"
+            android:textColor="@color/color_black_dark"
+            android:textSize="@dimen/y40"/>
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/color_public_division"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y150"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_invest_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="120,000.00"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="@dimen/y44"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="@dimen/y26"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投标金额"
+                    android:textColor="@color/color_black_medium_light"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/x3"
+                android:layout_height="match_parent"
+                android:background="@color/color_public_division"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19.00%"
+                    android:textColor="@color/color_red_light"
+                    android:textSize="@dimen/y44"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年化收益"
+                    android:textColor="@color/color_black_medium_light"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/x3"
+                android:layout_height="match_parent"
+                android:background="@color/color_public_division"
+                />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_qixian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1/12"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="@dimen/y44"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个月"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="@dimen/y26"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="期限"
+                    android:textColor="@color/color_black_medium_light"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="@color/color_public_division"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y150"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_daishoubenxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="120,000.00"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="@dimen/y44"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="@dimen/y26"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待收本息"
+                    android:textColor="@color/color_black_medium_light"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/x3"
+                android:layout_height="match_parent"
+                android:background="@color/color_public_division"
+                />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_yishoubenxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19.00"
+                    android:textColor="@color/color_black_dark"
+                    android:textSize="@dimen/y44"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已收本息"
+                    android:textColor="@color/color_black_medium_light"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/x3"
+                android:layout_height="match_parent"
+                android:background="@color/color_public_division"
+                />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_huankuanfangshi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_black_dark"/>
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="个月"-->
+                    <!--android:textColor="@color/color_black_dark"-->
+                    <!--android:textSize="@dimen/y26" />-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="还款方式"
+                    android:textColor="@color/color_black_medium_light"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3"
+            android:background="@color/color_public_division"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <Button
+                android:id="@+id/bt_chebiao"
+                android:layout_width="@dimen/x164"
+                android:layout_height="@dimen/y70"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x80"
+                android:background="@drawable/select_btn_purchase"
+                android:text="撤标"
+                android:textColor="@drawable/select_text_buy_product"
+                android:textSize="@dimen/y32"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_shoukuanjihua"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_shoukuanjihua"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="@string/shoukuanjihua"
+                    android:textSize="12sp"
+                    android:textColor="@drawable/select_text_buy_product"/>
+
+                <TextView
+                    android:id="@+id/tv_chujiexiyi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="@string/chujiexiyi"
+                    android:textSize="12sp"
+                    android:textColor="@drawable/select_text_buy_product"/>
+
+                <TextView
+                    android:id="@+id/tv_jiekuanxieyi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="@string/jiekuanxieyi"
+                    android:textColor="@drawable/select_text_buy_product"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3"
+            android:background="@color/color_public_division"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="投标时间:"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/tv_huankuanshijian"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="2015-11-11"
+                android:textSize="11sp"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textSize="11sp"-->
+            <!--android:text="08:00:00"/>-->
+
+        <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bt_chebiao"
+                    android:layout_width="@dimen/x164"
+                    android:layout_height="@dimen/y70"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x80"
+                    android:background="@drawable/select_btn_purchase"
+                    android:text="撤标"
+                    android:textColor="@drawable/select_text_buy_product"
+                    android:textSize="@dimen/y32"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_shoukuanjihua"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_shoukuanjihua"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:gravity="center"
+                        android:text="@string/shoukuanjihua"
+                        android:textSize="12sp"
+                        android:textColor="@drawable/select_text_buy_product"/>
+
+                    <TextView
+                        android:id="@+id/tv_jiekuanxieyi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:text="@string/jiekuanxieyi"
+                        android:textSize="12sp"
+                        android:textColor="@drawable/select_text_buy_product"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

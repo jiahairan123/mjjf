@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DraggableFlagView">
+
+    </declare-styleable>
+
+    <!-- 圆环进度View-->
+    <declare-styleable name="DonutProgressView">
+        <attr name="donut_progress" format="integer"/>
+        <attr name="donut_max" format="integer"/>
+
+        <attr name="donut_unfinished_color" format="color"/>
+        <attr name="donut_finished_color" format="color"/>
+
+        <attr name="donut_finished_stroke_width" format="dimension"/>
+        <attr name="donut_unfinished_stroke_width" format="dimension"/>
+
+        <attr name="donut_text_size" format="dimension"/>
+        <attr name="donut_text_color" format="color"/>
+
+        <attr name="donut_prefix_text" format="string"/>
+        <attr name="donut_suffix_text" format="string"/>
+        <attr name="donut_text" format="string"/>
+
+        <attr name="donut_background_color" format="color"/>
+
+        <attr name="donut_inner_bottom_text" format="string"/>
+        <attr name="donut_inner_bottom_text_size" format="dimension"/>
+        <attr name="donut_inner_bottom_text_color" format="color"/>
+
+        <attr name="donut_circle_starting_degree" format="integer" />
+    </declare-styleable>
+
+    <!-- 圆弧进度View-->
+    <declare-styleable name="ArcProgressView">
+        <attr name="arc_progress" format="integer"/>
+        <attr name="arc_angle" format="float"/>
+        <attr name="arc_stroke_width" format="dimension"/>
+        <attr name="arc_max" format="integer"/>
+
+        <attr name="arc_unfinished_color" format="color"/>
+        <attr name="arc_finished_color" format="color"/>
+
+        <attr name="arc_text_size" format="dimension"/>
+        <attr name="arc_text_color" format="color"/>
+        <attr name="arc_custom_text" format="string"/>
+        <attr name="arc_is_show_custom_text" format="boolean"/>
+
+        <attr name="arc_suffix_text" format="string"/>
+        <attr name="arc_suffix_text_size" format="dimension"/>
+        <attr name="arc_suffix_text_padding" format="dimension"/>
+
+        <attr name="arc_middle_text" format="string"/>
+        <attr name="arc_middle_text_size" format="dimension"/>
+        <attr name="arc_middle_text_padding" format="dimension"/>
+
+        <attr name="arc_bottom_text" format="string"/>
+        <attr name="arc_bottom_text_size" format="dimension"/>
+        <attr name="arc_bottom_text_padding" format="dimension"/>
+
+    </declare-styleable>
+
+
+    <!--收益计算器输入框自定义View-->
+    <declare-styleable name="IncomeCalculatorItemView">
+        <attr name="Left_text" format="string"/>
+        <attr name="content_text" format="string"/>
+        <attr name="right_text" format="string"/>
+        <attr name="isShowArrow" format="boolean"/>
+        <attr name="calculator_ed_type">
+            <enum name="phone" value="1"/>
+            <enum name="password" value="2"/>
+            <enum name="text" value="3"/>
+            <enum name="numberDecimal" value="8192"/>
+        </attr>
+    </declare-styleable>
+
+    <!--我的账户菜单列表item自定义view-->
+    <declare-styleable name="AccountMenuContentItemView">
+        <attr name="rightIconSrc" format="reference"/>
+        <attr name="rightIconWidthAndHeight" format="dimension"/>
+        <attr name="isShowRightIcon" format="boolean"/>
+        <attr name="middleTitleText" format="string"/>
+        <attr name="middleTitleTextSize" format="dimension"/>
+        <attr name="middleTitleTextColor" format="boolean"/>
+        <attr name="LeftIconSrc" format="reference"/>
+        <attr name="LeftIconWidthAndHeight" format="dimension"/>
+        <attr name="isShowLeftIcon" format="boolean"/>
+    </declare-styleable>
+
+    <!--自定义输入框的属性-->
+    <declare-styleable name="InputView">
+        <attr name="left_icon" format="reference"/>
+        <attr name="right_icon" format="reference"/>
+        <attr name="edtext_hint" format="string"/>
+        <attr name="left_Hint" format="boolean"/>
+        <attr name="right_Hint" format="boolean"/>
+        <attr name="right_Show" format="boolean"/>
+        <attr name="edtext_type">
+            <enum name="phone" value="1"/>
+            <enum name="password" value="2"/>
+            <enum name="text" value="3"/>
+            <enum name="numberDecimal" value="8192"/>
+        </attr>
+    </declare-styleable>
+
+    <!--账户设置item-->
+    <declare-styleable name="AccountsetItemView">
+        <attr name="Accountset_Left_icon" format="reference"></attr>
+        <attr name="Accountset_content_text" format="string"></attr>
+        <attr name="Accountset_action" format="string"></attr>
+        <attr name="Accountset_status" format="string"></attr>
+        <attr name="Status_color" format="color"></attr>
+        <attr name="isShowStatus" format="boolean">
+        </attr>
+    </declare-styleable>
+
+    <!-- 公共标题栏 -->
+    <declare-styleable name="titleView">
+        <attr name="icon_left" format="reference"></attr>
+        <attr name="icon_right" format="reference"></attr>
+        <attr name="title_text" format="string"></attr>
+        <attr name="text_right" format="string"></attr>
+        <attr name="title_bg" format="color"></attr>
+        <attr name="showRightText" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ToggleButton">
+        <attr name="myborderWidth" format="dimension">
+        </attr>
+        <attr name="offBorderColor" format="reference|color">
+        </attr>
+        <attr name="offColor" format="reference|color">
+        </attr>
+        <attr name="onColor" format="reference|color">
+        </attr>
+        <attr name="spotColor" format="reference|color">
+        </attr>
+        <attr name="animate" format="reference|boolean">
+        </attr>
+    </declare-styleable>
+
+
+    <!-- LockPatternView class attributes -->
+    <declare-styleable name="LockPatternView">
+
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect">
+            <enum name="square" value="0"/>
+            <enum name="lockWidth" value="1"/>
+            <enum name="lockHeight" value="2"/>
+        </attr>
+        <attr name="line" format="color"/>
+        <attr name="btnNormal" format="reference"/>
+        <attr name="btnTouched" format="reference"/>
+        <attr name="circleNormal" format="reference"/>
+        <attr name="circleGreen" format="reference"/>
+        <attr name="circleRed" format="reference"/>
+        <attr name="arrowGreenUp" format="reference"/>
+        <attr name="arrowRedUp" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="InvestIndicator">
+        <attr name="invest_tabs">
+            <enum name="TWO" value="2"/>
+            <enum name="FOR" value="4"/>
+            <enum name="THREE" value="3"/>
+        </attr>
+        <attr name="invest_tabNames" format="string"/>
+    </declare-styleable>
+
+    <string-array name="invest_tab">
+        <item>散标投资</item>
+        <!-- <item>债权转让</item> -->
+    </string-array>
+
+    <string-array name="mytouai_tab">
+        <item>还款中</item>
+        <item>招标中</item>
+        <item>已完结</item>
+    </string-array>
+
+    <string-array name="return_tab">
+        <item>全部</item>
+        <item>待收</item>
+        <item>已收</item>
+    </string-array>
+
+    <string-array name="repay_tab">
+        <item>全部</item>
+        <item>待还</item>
+        <item>已还</item>
+    </string-array>
+
+    <string-array name="coupon_tab">
+        <item>现金券</item>
+        <item>红包</item>
+    </string-array>
+
+
+    <string-array name="loan_peple">
+        <item>借款描述</item>
+        <item>风控信息</item>
+        <item>借款材料</item>
+    </string-array>
+    <string-array name="elec_bill">
+        <item>投资记录</item>
+        <item>交易记录</item>
+    </string-array>
+    <string-array name="one">
+        <item>投资记录</item>
+    </string-array>
+
+    <string-array name="auto_invest">
+        <item>开通授权</item>
+        <item>自动设置</item>
+        <item>自动投标列表</item>
+    </string-array>
+
+    <string-array name="my_borrow">
+        <item>还款中</item>
+        <item>审核中</item>
+        <item>审核通过</item>
+        <item>已完结</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--标题-->
+        <include layout="@layout/public_title_blue"></include>
+
+        <RelativeLayout
+            android:layout_width="882px"
+            android:layout_height="156px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="136px"
+            android:background="@drawable/common_menu_item_bg">
+
+            <ImageView
+                android:id="@+id/pswd"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@mipmap/pswd"/>
+            <!--输入密码-->
+            <EditText
+                android:id="@+id/input_modify_password"
+                android:layout_width="530px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_toRightOf="@id/pswd"
+                android:background="@null"
+                android:hint="原始登录密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColorHint="#aaaaaa"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/re_visiable"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/visiable_close"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="882px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorline"/>
+
+        <RelativeLayout
+            android:layout_width="882px"
+            android:layout_height="156px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/common_menu_item_bg">
+
+            <ImageView
+                android:id="@+id/pswd2"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@mipmap/pswd2"/>
+            <!--输入密码-->
+            <EditText
+                android:id="@+id/input_modify_newpassword"
+                android:layout_width="530px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_toRightOf="@id/pswd2"
+                android:background="@null"
+                android:hint="新登录密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColorHint="#aaaaaa"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/re_visiable1"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/visiable_close"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="882px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorline"/>
+
+        <RelativeLayout
+            android:layout_width="882px"
+            android:layout_height="156px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/common_menu_item_bg">
+
+            <ImageView
+                android:id="@+id/pswd3"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@mipmap/pswd2"/>
+            <!--输入密码-->
+            <EditText
+                android:id="@+id/input_modify_affimpassword"
+                android:layout_width="530px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_toRightOf="@id/pswd3"
+                android:background="@null"
+                android:hint="确认登录密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColorHint="#aaaaaa"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/re_visiable2"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/visiable_close"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="882px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorline"/>
+        <!--原始登录密码-->
+        <!--<com.minghao.cgkx.view.InputView-->
+        <!--android:id="@+id/input_modify_password"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/y136"-->
+        <!--app:edtext_hint="原始登录密码"-->
+        <!--app:left_Hint="true"-->
+        <!--/>-->
+
+        <!--输入新登录密码-->
+        <!--<com.minghao.cgkx.view.InputView-->
+        <!--android:id="@+id/input_modify_newpassword"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/y44"-->
+        <!--app:edtext_hint="新登录密码"-->
+        <!--app:left_Hint="true"-->
+        <!--/>-->
+        <!--确认密码-->
+        <!--<com.minghao.cgkx.view.InputView-->
+        <!--android:id="@+id/input_modify_affimpassword"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/y44"-->
+        <!--app:edtext_hint="确认登录密码"-->
+        <!--app:left_Hint="true"-->
+        <!--/>-->
+
+        <RelativeLayout
+            android:layout_width="882px"
+            android:layout_height="156px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/common_menu_item_bg">
+
+            <ImageView
+                android:id="@+id/check"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@mipmap/messager"/>
+            <!--输入密码-->
+            <EditText
+                android:id="@+id/input_modify_verifycode"
+                android:layout_width="440px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_toRightOf="@id/check"
+                android:background="@null"
+                android:hint="短信验证码"
+                android:maxLength="8"
+                android:textColorHint="#aaaaaa"
+                android:textSize="14sp"/>
+
+            <com.mingjie.jf.view.MateralButton
+                android:id="@+id/btn_modify_getcode"
+                android:layout_width="280px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/y20"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@drawable/user_login_edtext"
+                android:text="@string/register_tv13"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="882px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorline"/>
+        <!--验证码-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="3">-->
+
+        <!--<com.minghao.cgkx.view.InputView-->
+        <!--android:id="@+id/input_modify_verifycode"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/y44"-->
+        <!--android:layout_weight="2"-->
+        <!--app:edtext_hint="验证码"-->
+        <!--app:left_Hint="true"-->
+        <!--/>-->
+
+        <!--&lt;!&ndash;获取验证码&ndash;&gt;-->
+        <!--<Button-->
+        <!--android:id="@+id/btn_modify_getcode"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="@dimen/y44"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/user_login_edtext"-->
+        <!--android:text="@string/resetpass_tv4"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="16dp"-->
+        <!--/>-->
+        <!--</LinearLayout>-->
+
+        <!--登录-->
+        <!--<com.minghao.cgkx.view.MateralButton-->
+        <!--android:id="@+id/btn_modify"-->
+        <!--android:textSize="16sp"-->
+        <!--android:background="@drawable/user_login_edtext"-->
+        <!--style="@style/modify_btn"-->
+        <!--android:text="确定修改"-->
+        <!--android:layout_marginTop="@dimen/y90"-->
+        <!--/>-->
+        <com.mingjie.jf.view.MateralButton
+            android:id="@+id/btn_modify"
+            android:layout_width="882px"
+            android:layout_height="116px"
+            android:layout_gravity="center"
+            android:layout_marginTop="40px"
+            android:background="@drawable/user_login_edtext"
+            android:gravity="center"
+            android:text="确定修改"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/view_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/btn_keyboard_key"
+        android:keyTextColor="@color/white"
+        android:visibility="gone"/>
+</RelativeLayout>

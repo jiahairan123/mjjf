@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:background="@mipmap/item_finish_coupon">
+
+
+        <View
+            android:id="@+id/item_center_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff" />
+
+
+        <TextView
+            android:id="@+id/item_coupon_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:text="现金券"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/item_coupon_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp"
+            android:text="100"
+            android:textColor="#ffffff"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_coupon_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_coupon_time"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/item_center_line"
+            android:text="元"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/item_coupon_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/item_center_line"
+            android:text="剩余  999  张"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/item_coupon_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_coupon_rest"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/item_center_line"
+            android:text="活动专享 投资专区"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/item_coupon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_coupon_activity"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/item_center_line"
+            android:text="投资期限 超过30天可用"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/item_coupon_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_coupon_time"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/item_center_line"
+            android:text="单笔投资20000元可用"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/tv_coupon_time_canuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="有效日期2017-08-12至2018-08-12"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_coupon_state"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@+id/item_center_line"
+            android:background="@mipmap/item_interest_coupon_button"
+            android:gravity="center"
+            android:text="立 即 抢 券"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</LinearLayout>

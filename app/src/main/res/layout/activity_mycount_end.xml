@@ -1,0 +1,1167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativerevest"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/my_pain"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/my_pain" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="21dp"
+            android:gravity="center"
+            android:text="我的投资"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/my_pain"
+            android:layout_toEndOf="@+id/my_pain"
+            android:layout_marginStart="21dp" />
+
+        <ImageView
+            android:id="@+id/userinfo_iv_invest_arrow1"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <LinearLayout
+        android:id="@+id/ll_invest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/invest_finish"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="我的投资"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/return_calendar"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="回款日历"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/invest_hand"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="投资记录"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/risk_test"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="风险测评"
+            app:middleTitleTextSize="40px" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+
+    <!--  新加的 我的积分  begin-->
+    <RelativeLayout
+        android:id="@+id/rl_integral"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_my_integral"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/integral" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_my_integral"
+            android:gravity="center"
+            android:text="我的积分"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+        <ImageView
+            android:id="@+id/iv_integral_arrow"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <LinearLayout
+        android:id="@+id/ll_integral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_my_integral"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="我的积分"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_my_integral_mall"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="积分商城"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+    </LinearLayout>
+
+
+
+
+    <!--  新加的 我的积分  end  -->
+    <!-- 签到获取积分 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_sign_get_integral"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_sign_integral"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/sign_in" />
+
+
+        <TextView
+            android:id="@+id/sign_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_sign_integral"
+            android:gravity="center"
+            android:text="签到领取积分"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <TextView
+            android:id="@+id/tv_sign_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="135px"
+            android:background="@null"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_gray" />
+
+        <ImageView
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_get_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_get_coupon"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/get_coupon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_get_coupon"
+            android:gravity="center"
+            android:text="抢券中心"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_get_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="135px"
+            android:background="@null"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_gray" />
+
+        <ImageView
+            android:id="@+id/get_coupon_arrow"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F0F1F5" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_charge_getcoupon"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_charge_getcoupon"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/charedaqw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_charge_getcoupon"
+            android:gravity="center"
+            android:text="兑换中心"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_charge_getcoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="135px"
+            android:background="@null"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_gray" />
+
+        <ImageView
+            android:id="@+id/charge_getcoupon_arrow"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F0F1F5" />
+
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/ll_get_coupon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.mingjie.jf.view.AccountMenuContentItemView
+        android:id="@+id/av_get_coupon"
+        style="@style/width_height_wrap"
+        android:background="@drawable/common_menu_item_bg"
+        app:isShowLeftIcon="false"
+        app:middleTitleText="抢券"
+        app:middleTitleTextSize="40px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="#F0F1F5" />
+
+    <com.mingjie.jf.view.AccountMenuContentItemView
+        android:id="@+id/av_charge_coupon"
+        style="@style/width_height_wrap"
+        android:background="@drawable/common_menu_item_bg"
+        app:isShowLeftIcon="false"
+        app:middleTitleText="兑换"
+        app:middleTitleTextSize="40px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F1F5" />
+
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_coupon"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/coupon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_coupon"
+            android:gravity="center"
+            android:text="我的优惠券"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+        <ImageView
+            android:id="@+id/userinfo_iv_coupon"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_cash_coupon"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="现金券"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_gain_coupon"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="加息券"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_red_packet"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="红包"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F1F5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeattom"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_equiteable_assignment"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/equiteable_assignment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_equiteable_assignment"
+            android:gravity="center"
+            android:text="债权转让"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/userinfo_iv_equiteable_assignment_arrow"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+    <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#F0F1F5"
+        />
+
+         -->
+    <LinearLayout
+        android:id="@+id/ll_equ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_equ_but"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="债权转让"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_equrec_but"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="转让记录"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F1F5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_case_dough"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_case_dough"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/case_cough" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_case_dough"
+            android:gravity="center"
+            android:text="私房钱"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+        <ImageView
+            android:id="@+id/userinfo_iv_case_dough"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <LinearLayout
+        android:id="@+id/ll_casedough"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_case_manager"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="私房钱管理"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_case_card"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="银行卡"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_case_withdraw"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="提现记录"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativerecharge"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_userinfo_recharge"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/rechange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_userinfo_recharge"
+            android:gravity="center"
+            android:text="充值管理"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/userinfo_iv_invest_arrow"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <RelativeLayout
+        android:id="@+id/relativewithdraw"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_userinfo_withdrawls"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/withdrawls" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_userinfo_withdrawls"
+            android:gravity="center"
+            android:text="提现管理"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/userinfo_iv_invest_arrow2"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <!--我的借款-->
+    <RelativeLayout
+        android:id="@+id/rl_my_borrow"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_my_borrow"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/jiekuan_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_my_borrow"
+            android:gravity="center"
+            android:text="我的借款"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/iv_my_borrow_arrows"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_borrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_my_borrow"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="我的借款"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/av_repay_calendar"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="还款日历"
+            app:middleTitleTextSize="40px" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+    </LinearLayout>
+
+    <!--自动投资-->
+    <RelativeLayout
+        android:id="@+id/rl_autoinvest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y148"
+        android:background="@drawable/common_menu_item_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_autoinvest"
+            android:layout_width="@dimen/x84"
+            android:layout_height="@dimen/y84"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x34"
+            android:src="@mipmap/auto_invest" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_toRightOf="@+id/iv_autoinvest"
+            android:gravity="center"
+            android:text="自动投资"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/iv_autoinvest_arrow"
+            android:layout_width="@dimen/x52"
+            android:layout_height="@dimen/y52"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x70"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+
+    <!--推荐奖励-->
+    <RelativeLayout
+        android:id="@+id/rl_recommend_award"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_recommend_award"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/recommend_award" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_recommend_award"
+            android:gravity="center"
+            android:text="推荐奖励"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/iv_recommend_award_arrow"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <LinearLayout
+        android:id="@+id/account_my_recommendation_child_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/account_exclusive_qr_code"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="我的推荐"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/account_business_partner"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            android:visibility="gone"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="创业小伙伴"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5"
+            android:visibility="gone" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/account_business_partner_deduct"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            android:visibility="gone"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="创业小伙伴提成"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativebill"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_userinfo_electronic_bill"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/electronic_bill" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_userinfo_electronic_bill"
+            android:gravity="center"
+            android:text="电子账单"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/iv_userinfo_electronic_bill_arrow"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <RelativeLayout
+        android:id="@+id/relative_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/introduce_iv"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/gain_list" />
+
+        <TextView
+            android:layout_toRightOf="@+id/introduce_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:gravity="center"
+            android:text="提成管理"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/introduce_arrow_right"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <LinearLayout
+        android:id="@+id/ll_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/introducer_list"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="提成记录"
+            app:middleTitleTextSize="40px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+
+        <com.mingjie.jf.view.AccountMenuContentItemView
+            android:id="@+id/introducer_gain_history"
+            style="@style/width_height_wrap"
+            android:background="@drawable/common_menu_item_bg"
+            app:isShowLeftIcon="false"
+            app:middleTitleText="受邀请人"
+            app:middleTitleTextSize="40px" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#F0F1F5" />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <RelativeLayout
+        android:id="@+id/relativeaccount"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_userinfo_accout_setting"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/accout_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_userinfo_accout_setting"
+            android:gravity="center"
+            android:text="账户设置"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/userinfo_iv_accout_setting_arrow"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+
+    <RelativeLayout
+        android:id="@+id/relativeamore"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/common_menu_item_bg">
+
+        <ImageView
+            android:id="@+id/iv_userinfo_more_setting"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34px"
+            android:src="@mipmap/more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:layout_toRightOf="@+id/iv_userinfo_more_setting"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/color_black_medium_light"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:id="@+id/userinfo_iv_more_setting_arrow"
+            android:layout_width="52px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70px"
+            android:src="@mipmap/nextpage" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#F0F1F5" />
+</LinearLayout>

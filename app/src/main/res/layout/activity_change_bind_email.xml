@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_blue"/>
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/content_margin"
+        android:layout_marginTop="48dp"
+        android:text="@string/the_old_celphone_is" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.mingjie.jf.view.InputView
+            android:id="@+id/editText3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y44"
+            android:layout_weight="2"
+            app:edtext_hint="手机验证码"
+            app:edtext_type="phone"
+            app:left_Hint="true"
+            />
+
+        <com.mingjie.jf.view.MateralButton
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/y44"
+            android:layout_weight="1"
+            android:background="@drawable/corners_recharge_sure"
+            android:text="@string/resetpass_tv4"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+    <com.mingjie.jf.view.MateralButton
+        android:id="@+id/btn_next"
+        style="@style/content_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:background="@drawable/corners_recharge_sure"
+        android:text="@string/next_step" />
+</LinearLayout>

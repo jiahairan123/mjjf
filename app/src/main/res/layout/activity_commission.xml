@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5FB4F4"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title"/>
+
+    <com.mingjie.jf.widgets.RefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y40">
+
+                    <TextView
+                        android:id="@+id/tv_sum_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sum_net_income"
+                        android:textColor="@color/white"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_sum_name"
+                        android:layout_marginTop="@dimen/y5"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_sum_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/y20"
+                            android:layout_toRightOf="@+id/tv_sum_money"
+                            android:text="@string/yuan"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_recommend_deduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y10"
+                    android:background="@drawable/background_translect"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:gravity="center"
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_translect">
+
+                            <TextView
+                                android:id="@+id/tv_sum_commision"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/y30"
+                                android:text="@string/sum_commision"
+                                android:textColor="@color/white"
+                                />
+
+                            <TextView
+                                android:gravity="center_vertical"
+                                android:id="@+id/tv_sum_commision_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_sum_commision"
+                                android:layout_centerHorizontal="true"
+                                android:text="0.00"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_sum_commision"
+                                android:layout_marginTop="10px"
+                                android:layout_toRightOf="@id/tv_sum_commision_number"
+                                android:text="@string/yuan"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"/>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/y10"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_translect"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_direct_commision"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/y30"
+                                android:text="@string/direct_rec_commision"
+                                android:textColor="@color/white"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_direct_commision_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_direct_commision"
+                                android:layout_centerHorizontal="true"
+                                android:text="0.00"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_direct_commision"
+                                android:layout_marginTop="@dimen/y15"
+                                android:layout_toRightOf="@id/tv_direct_commision_number"
+                                android:text="@string/yuan"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"/>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y5"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_gravity="center"
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_translect">
+
+                            <TextView
+                                android:id="@+id/tv_recevie_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/y30"
+                                android:text="@string/month_commision"
+                                android:textColor="@color/white"
+                                />
+
+                            <TextView
+                                android:gravity="center_vertical"
+                                android:id="@+id/tv_tv_recevie_money_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_recevie_money"
+                                android:layout_centerHorizontal="true"
+                                android:text="0.00"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_recevie_money"
+                                android:layout_marginTop="10px"
+                                android:layout_toRightOf="@id/tv_tv_recevie_money_number"
+                                android:text="@string/yuan"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/y10"
+                            android:layout_marginTop="@dimen/y5"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_translect"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_total_sum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/y30"
+                                android:text="@string/indirect_rec_commision"
+                                android:textColor="@color/white"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_total_sum_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_total_sum"
+                                android:layout_centerHorizontal="true"
+                                android:text="0.00"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_total_sum"
+                                android:layout_marginTop="@dimen/y15"
+                                android:layout_toRightOf="@id/tv_total_sum_number"
+                                android:text="@string/yuan"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="#eeeeee"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/date"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_mark_tab2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/commission_money"
+                        android:textSize="12sp"/>
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_mark_tab3"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/direct_commission"-->
+                    <!--android:textSize="12sp"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_mark_tab4"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/indirect_commission"-->
+                    <!--android:textSize="12sp"/>-->
+
+                    <TextView
+                        android:id="@+id/tv_mark_tab5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/state"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+                <!--<com.minghao.cgkx.widgets.RefreshLayout-->
+                <!--android:id="@+id/his_refresh"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@android:color/white"-->
+                <!--android:paddingTop="7dp">-->
+
+                <!--<ListView-->
+                <!--android:id="@+id/listview_mark_history"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:divider="@null" />-->
+                <!--</com.minghao.cgkx.widgets.RefreshLayout>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <!--<include layout="@layout/item_commission_history"/>-->
+                    <com.mingjie.jf.widgets.ScrollViewNestListview
+                        android:id="@+id/lv_friend_push"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></com.mingjie.jf.widgets.ScrollViewNestListview>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_error_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_error_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.mingjie.jf.widgets.RefreshLayout>
+</LinearLayout>

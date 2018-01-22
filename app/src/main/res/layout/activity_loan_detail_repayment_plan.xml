@@ -1,0 +1,354 @@
+<!--<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/buy_creditor_right_swipe"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--&gt;-->
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 借款项目详情之借款信息-->
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/public_title_blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="72px"
+                        android:layout_height="72px"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/zhuan"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30px"
+                        android:singleLine="true"
+                        android:text="转让信息"
+                        android:textColor="@color/color_black_dark"
+                        android:textSize="44px"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_public_division"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="债权价值"
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+
+                    <TextView
+                        android:id="@+id/tv_zhaiquan_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="#EB6100"
+                        android:textSize="38px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="当前至今利息"
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+
+                    <TextView
+                        android:id="@+id/tv_zhaiquan_lixi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="剩余本金"
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+
+                    <TextView
+                        android:id="@+id/tv_zhaiquan_benxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="剩余时间"
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+
+                    <TextView
+                        android:id="@+id/tv_zhaiquan_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="下期回款日期"
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+
+                    <TextView
+                        android:id="@+id/tv_zhaiquan_return_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/color_public_division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30px">
+
+                    <TextView
+                        android:id="@+id/tv_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="转让价格："
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+
+                    <EditText
+                        android:id="@+id/et_zhaiquan_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_01"
+                        android:hint="请输入转让价格"
+                        android:inputType="numberDecimal"/>
+
+                    <TextView
+                        android:id="@+id/tv_pay_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="元"
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_public_division"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30px">
+
+                    <TextView
+                        android:id="@+id/tv_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="转让时效："
+                        android:textColor="@color/color_black_medium_light"
+                        android:textSize="38px"/>
+
+                    <EditText
+                        android:id="@+id/et_zhaiquan_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_02"
+                        android:hint="请输入转让时效"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:maxLines="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_zheyi_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="天"
+                        android:textSize="38px"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_public_division"/>
+
+            <LinearLayout
+                android:id="@+id/rl_borrow_message"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/tv_zhejia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/creditor_loan_info_iv"
+                    android:layout_weight="1"
+                    android:paddingLeft="30px"
+                    android:text="折价率:---"
+                    android:textColor="#5EB4F4"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_sunshi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/creditor_loan_info_iv"
+                    android:layout_weight="1.5"
+                    android:paddingLeft="30px"
+                    android:text="损失本金金额:---"
+                    android:textColor="#5EB4F4"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_can_use_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <!--登录-->
+                <com.mingjie.jf.view.MateralButton
+                    android:id="@+id/bt_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="106px"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/corners_recharge_sure"
+                    android:gravity="center"
+                    android:text="确认转让"
+                    android:textColor="@color/white"
+                    android:textSize="50px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100px"
+                    android:text="备注"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="1.转让价格上限为剩余本金+当期至今利息;"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="2.撤销转让条件：在转让时效内，无人投资，可以撤销债权转让;"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

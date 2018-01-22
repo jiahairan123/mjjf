@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_blue" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/content_margin"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="@dimen/x60"
+        android:text="@string/new_email" />
+
+    <!--确认密码-->
+    <com.mingjie.jf.view.InputView
+        android:id="@+id/input_modify_affimpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y44"
+        app:edtext_hint="确认登录密码"
+        app:edtext_type="password"
+        app:left_Hint="true" />
+
+    <com.mingjie.jf.view.MateralButton
+        android:id="@+id/btn_next"
+        style="@style/content_margin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:background="@drawable/corners_recharge_sure"
+        android:text="@string/next_step" />
+
+</LinearLayout>

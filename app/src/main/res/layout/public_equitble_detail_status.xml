@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="189dp"
+    android:background="@android:color/white">
+
+    <!--借款人、分期方式-->
+    <LinearLayout
+        android:id="@+id/linear_load_detail"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal">
+        <!--借款人-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_loan_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:maxEms="23"
+                android:singleLine="true"
+                android:textColor="@color/xiao_black"/>
+
+            <TextView
+                android:id="@+id/tv_loan_user_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/loan"
+                android:textSize="12sp"
+                android:text="剩余期数"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_loan_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="14sp"
+                android:textColor="@color/xiao_black"
+                />
+
+            <TextView
+                android:id="@+id/tv_loan_method_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="right"
+                android:textSize="12sp"
+                android:textColor="@color/loan"
+                android:text="本期持有天数"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_cutline_load_detail"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/linear_load_detail"
+        android:background="@color/color_public_background"/>
+
+    <!-- 下期还款日 剩余时间 -->
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@id/view_cutline_load_detail"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_loaninvest_scope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xiao_black"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_loaninvest_scope_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textSize="12sp"
+                android:textColor="@color/loan"
+                android:text="还款方式"/>
+        </LinearLayout>
+
+        <!--分期方式-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_loan_surplusTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_red_light"
+                android:layout_gravity="right"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="right"
+                android:textSize="12sp"
+                android:textColor="@color/loan"
+                android:text="转让日期"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_01"
+        android:background="@color/color_public_background"/>
+
+    <!--可投范围，剩余时间-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@id/v_01"
+        android:orientation="horizontal">
+
+        <!--借款人-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nex_return_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xiao_black"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textSize="12sp"
+                android:textColor="@color/loan"
+                android:text="下期还款日期"/>
+        </LinearLayout>
+
+        <!--分期方式-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_surplusTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_red_light"
+                android:layout_gravity="right"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="right"
+                android:textSize="12sp"
+                android:textColor="@color/loan"
+                android:text="剩余时间"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--印章-->
+    <ImageView
+        android:id="@+id/iv_loan_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/public_title_blue"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="120px"
+                android:text="原手机号码："/>
+
+            <TextView
+                android:id="@+id/telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120px"
+                android:text=""/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="882px"
+            android:layout_height="156px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y120"
+            android:background="@drawable/common_menu_item_bg">
+
+            <ImageView
+                android:id="@+id/check"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/messager"/>
+
+            <EditText
+                android:id="@+id/et_safephone"
+                android:layout_width="440px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_toRightOf="@id/check"
+                android:background="@null"
+                android:hint="短信验证码"
+                android:maxLength="8"
+                android:textColorHint="#aaaaaa"
+                android:textSize="40px"/>
+
+            <com.mingjie.jf.view.MateralButton
+                android:id="@+id/change_button"
+                android:layout_width="280px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/y20"
+                android:layout_marginTop="@dimen/y20"
+                android:background="@drawable/user_login_edtext"
+                android:text="@string/register_tv13"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="882px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorline"/>
+
+        <!--登录密码-->
+        <RelativeLayout
+            android:layout_width="882px"
+            android:layout_height="156px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/common_menu_item_bg">
+
+            <ImageView
+                android:id="@+id/pswd"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/pswd"/>
+            <!--输入密码-->
+            <EditText
+                android:id="@+id/edt_user_register_password"
+                android:layout_width="530px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_toRightOf="@id/pswd"
+                android:background="@null"
+                android:hint="输入登录密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColorHint="#aaaaaa"
+                android:textSize="40px"/>
+
+            <ImageView
+                android:id="@+id/re_visiable"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/close_visiable"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="882px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorline"/>
+
+        <com.mingjie.jf.view.MateralButton
+            android:id="@+id/btn_next"
+            android:layout_width="746px"
+            android:layout_height="156px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/corners_recharge_sure"
+            android:text="@string/next_step"
+            android:textColor="@color/white"/>
+
+        <!--温馨提示-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="15dp"
+            android:text="温馨提示："
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/tv_chongzhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="如果手机号注销或者其它原因无法收到短信，请联系客服修改。"
+            android:textColor="#959595"/>
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/view_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/btn_keyboard_key"
+        android:keyTextColor="@color/white"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text=" 抢券说明:"
+        android:textColor="#314369"
+        android:textSize="14sp" />
+
+    <TextView
+        android:lineSpacingExtra="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:text="1、抢券时间：周一至周五10:00准时开抢，先抢先得，抢完即止；"
+        android:textColor="#7f7f7f"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:text="2、每人每天单项奖券限领1张，累计限领3张；"
+        android:textColor="#7f7f7f"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:lineSpacingExtra="4dp"
+        android:text="3、领取后，“现金券”/“加息券”及时到账，请进入“我的账户”-“我的卡券”查询，未使用过期，视作自动放弃；"
+        android:textColor="#7f7f7f"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:text="4、如有问题，请致电全国热线：400-807-6777；"
+        android:textColor="#7f7f7f"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:text="5、在法律允许的范围内，本页面最终解释权归铭捷金服所有。"
+        android:textColor="#7f7f7f"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="25dp"
+        android:text="安全保障"
+        android:textColor="@color/color_public_blue"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="1.“互联网+借贷+汽车” ——平台以互联网为主要渠道，将金融产品做出了市场细分，创新推出完全以车辆作为抵押的M2M模式，汽车金融保障看得见；" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="2.独创七级多维风控体系，在风险把控上严格筛选借款人，保证出借人的利益，减少风险事件的可能性，借款人和出借人均为真实有效，目前我司采用风险管理总部集中式的数据化风控模式，从而解决审核标准不统一以及审核人员需要长期经验积累的问题；" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="3.平台资金银行存管、完善的贷后管理、顶尖安全标准技术保障、权威法律监督及服务是铭捷金服最大的优势，全方位确保出借人资金全权，为您财富保驾护航；" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="4.设立风险备用金，对逾期借款垫付；" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/color_public_division" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp"
+            android:text="贷后保障"
+            android:textColor="@color/color_public_blue"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/company_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:text="对每一笔借款全程跟踪预警，跨平台、跨行业逾期提醒、" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:text="第一时间发现借款人信用风险并及时预警。" />
+    </LinearLayout>
+
+</LinearLayout>

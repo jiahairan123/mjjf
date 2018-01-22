@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/public_title_blue"/>
+
+    <ProgressBar
+        android:id="@+id/web_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="6dip"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bar_states">
+    </ProgressBar>
+
+    <WebView
+        android:id="@+id/wv_private"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+    <LinearLayout
+        android:id="@+id/ll_error_page"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/avloadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/clickloading"
+            />
+
+        <TextView
+            android:id="@+id/tv_loadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络异常，点击重试"
+            android:textColor="#8d8d8d"/>
+    </LinearLayout>
+
+</LinearLayout>

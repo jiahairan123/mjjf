@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5aafff"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y140"
+        android:layout_marginTop="@dimen/y70" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_user_name"
+        android:layout_width="@dimen/x970"
+        android:layout_height="@dimen/y130"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y96"
+        android:background="@drawable/corners_bg"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入用户名/手机号/邮箱"
+            android:paddingLeft="@dimen/x45"
+            android:textColorHint="@color/white"
+            android:textSize="46px" />
+
+        <ImageView
+            android:id="@+id/iv_user_name_clean"
+            android:layout_width="@dimen/x68"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/clean" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_password"
+        android:layout_width="@dimen/x970"
+        android:layout_height="@dimen/y130"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y54"
+        android:background="@drawable/corners_bg"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edt_user_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:paddingLeft="@dimen/x45"
+            android:textColorHint="@color/white"
+            android:textSize="46px" />
+
+        <ImageView
+            android:id="@+id/iv_user_password_clean"
+            android:layout_width="@dimen/x68"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/clean" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/x970"
+        android:layout_height="@dimen/y130"
+        android:layout_marginLeft="@dimen/x53"
+        android:layout_marginTop="@dimen/y54">
+
+        <RelativeLayout
+            android:id="@+id/rl_user_register_phone_message"
+            android:layout_width="@dimen/x634"
+            android:layout_height="@dimen/y130"
+            android:background="@drawable/corners_bg"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edt_user_register_phone_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入短信验证码"
+                android:paddingLeft="@dimen/x20"
+                android:textColorHint="@color/white"
+                android:textSize="46px" />
+
+            <ImageView
+                android:id="@+id/iv_user_register_phone_message_clean"
+                android:layout_width="@dimen/x68"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/clean" />
+
+        </RelativeLayout>
+
+        <com.mingjie.jf.view.MateralButton
+            android:id="@+id/tv_user_register_phone_message"
+            android:layout_width="@dimen/x320"
+            android:layout_height="match_parent"
+            android:background="@drawable/corners_bg_white"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:layout_marginLeft="@dimen/x16"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/rl_user_register_phone_message"
+            android:layout_toEndOf="@+id/rl_user_register_phone_message" />
+    </RelativeLayout>
+
+
+    <com.mingjie.jf.view.MateralButton
+        android:id="@+id/login_btn"
+        android:layout_width="@dimen/x970"
+        android:layout_height="@dimen/y120"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y70"
+        android:background="@drawable/button_selector"
+        android:text="立即验证"
+        android:textColor="@color/color_black_medium_light"
+        android:textSize="50px" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/x970"
+        android:layout_height="@dimen/y130"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_forget_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y40"
+            android:text="忘记密码？"
+            android:textColor="@color/white"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/tv_free_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/y40"
+            android:text="免费注册》"
+            android:textColor="@color/white"
+            android:textSize="34px" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/grounding" />
+</LinearLayout>

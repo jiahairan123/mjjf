@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="74px">
+
+    <!--基准线-->
+    <View
+        android:id="@+id/cut_line"
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30px" />
+
+    <!--新手标记-->
+    <ImageView
+        android:id="@+id/flag_new_hand_iv"
+        android:layout_width="58px"
+        android:layout_height="52px" />
+
+    <!--标类型-->
+    <ImageView
+        android:id="@+id/invest_type_iv"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_marginTop="12px"
+        android:src="@drawable/invest_type_level"
+        android:layout_toRightOf="@id/cut_line" />
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/invest_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="50px"
+        android:layout_toRightOf="@id/invest_type_iv"
+        android:singleLine="true"
+        android:textColor="@android:color/white"/>
+
+    <View
+        android:id="@+id/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:layout_marginTop="@dimen/y25"
+        android:layout_below="@id/invest_title_tv"
+        android:background="@color/white"/>
+</RelativeLayout>

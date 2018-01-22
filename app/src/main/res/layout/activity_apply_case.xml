@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="340px"
+                        android:background="@mipmap/di">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="130px"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_back"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/backwhite"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="申请提现"
+                                android:textColor="@color/white"
+                                android:textSize="60px"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="80px"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_count_yuer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/relativeLayout"
+                                android:layout_marginLeft="10px"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="@color/white"
+                                android:textSize="45px"/>
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_count_yuer"
+                                android:gravity="center"
+                                android:text="私房钱金额（元）"
+                                android:textColor="@color/white"
+                                android:textSize="40px"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <!--<include-->
+                    <!--layout="@layout/activity_bindcardl"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="240px"-->
+                    <!--/>-->
+                    <LinearLayout
+                        android:id="@+id/linear_banklist_rootview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100px"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/iv_bankicon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="40px"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_bank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20px"
+                                android:layout_toRightOf="@+id/iv_bankicon"
+                                android:text=""
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/button_selector_back"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30px">
+
+                            <TextView
+                                android:id="@+id/tv_bank1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="70dp"
+                                android:text="开户名为"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_bank_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/tv_bank1"
+                                android:text=""
+                                android:textColor="@color/red"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_bank_number1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:layout_toRightOf="@+id/tv_bank_name"
+                                android:text="尾号："
+                                android:textSize="18sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_bank_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/tv_bank_number1"
+                                android:text=""
+                                android:textColor="@color/red"
+                                android:textSize="18sp"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10px"
+                        android:layout_marginTop="60px"
+                        android:background="@color/colorline"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="156px"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:layout_marginTop="@dimen/y56"
+                        android:background="@drawable/common_menu_item_bg"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <!--输入提现金额-->
+                        <EditText
+                            android:id="@+id/et_case_money"
+                            android:layout_width="0dp"
+                            android:layout_height="156px"
+                            android:layout_weight="3"
+                            android:background="@null"
+                            android:hint="请输入提现金额"
+                            android:inputType="numberDecimal"
+                            android:maxLength="16"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHint="#aaaaaa"
+                            android:textSize="40px"
+                            />
+
+                        <ImageView
+                            android:id="@+id/clean"
+                            android:layout_width="0dp"
+                            android:layout_height="60px"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/et_case_money"
+                            android:layout_weight="1"
+                            android:src="@mipmap/clean1"
+                            android:visibility="gone"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:background="@color/colorline"/>
+
+                    <EditText
+                        android:id="@+id/et_loginpsd"
+                        android:layout_width="match_parent"
+                        android:layout_height="156px"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:layout_toRightOf="@+id/user"
+                        android:background="@null"
+                        android:hint="登录密码"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHint="#aaaaaa"
+                        android:textSize="40px"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        android:background="@color/colorline"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="156px"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <EditText
+                            android:id="@+id/edt_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="80px"
+                            android:layout_toRightOf="@+id/user"
+                            android:layout_weight="2"
+                            android:background="@null"
+                            android:hint="请输入验证码"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHint="#aaaaaa"
+                            android:textSize="40px"
+                            />
+
+                        <com.mingjie.jf.view.MateralButton
+                            android:id="@+id/verificationcode"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/y20"
+                            android:layout_weight="1"
+                            android:background="@drawable/user_login_edtext"
+                            android:gravity="center"
+                            android:text="@string/register_tv13"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="80px"
+                        android:layout_marginRight="80px"
+                        />
+
+                    <com.mingjie.jf.view.MateralButton
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="116px"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_marginTop="80px"
+                        android:background="@drawable/user_login_edtext"
+                        android:text="提交申请"
+                        android:textColor="@color/white"
+                        android:textSize="43px"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_max"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="40px"
+                            android:text=""
+                            android:visibility="gone"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="40px"
+                            android:text=""
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_tixian_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="40px"
+                            android:text=""
+                            />
+                    </LinearLayout>
+                    <!--温馨提示-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80px"
+                        android:paddingLeft="15dp"
+                        android:text="温馨提示"
+                        android:textColor="@color/color_public_red"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="1. 提现受理时间工作日每天处理两次，分别为上午10:00和下午15:00；周六处理一次，时间为下午15:00；周日不处理。\n2. 为了保证银行转账成功，请确认银行账号信息的正确性，填写完整的开户行信息(XX市XX分行XX支行)。对于不完整的开户行账号，财务人员将拒绝提现。"
+                        android:textColor="#959595"/>
+                </LinearLayout>
+            </ScrollView>
+
+        <!--</LinearLayout>-->
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/view_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/btn_keyboard_key"
+        android:keyTextColor="@color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

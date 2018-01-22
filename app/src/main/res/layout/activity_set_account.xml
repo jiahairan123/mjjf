@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:toggle="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/public_title_blue"/>
+
+
+    <com.mingjie.jf.widgets.RefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <ScrollView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_public_background"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:background="@drawable/common_menu_item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--存管账户-->
+                <com.mingjie.jf.view.Accountset_item
+                    android:id="@+id/account_custody"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/common_menu_item_bg"
+                    app:Accountset_Left_icon="@mipmap/account_custody"
+                    app:Accountset_action="已开通"
+                    app:Accountset_content_text="存管账户"
+                    app:Accountset_status="未开通"
+                    app:isShowStatus="true"/>
+
+                <View
+                    android:layout_marginLeft="148px"
+                    android:layout_width="934px"
+                    android:layout_height="1dp"
+                    android:background="@color/color_public_background"/>
+
+                <!--实名认证-->
+                <com.mingjie.jf.view.Accountset_item
+                    android:id="@+id/realName"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:background="@drawable/common_menu_item_bg"
+                    app:Accountset_Left_icon="@mipmap/realname"
+                    app:Accountset_action="已认证"
+                    app:Accountset_content_text="实名认证"
+                    app:Accountset_status="未认证"
+                    app:isShowStatus="true"/>
+
+                <View
+                    android:layout_marginLeft="148px"
+                    android:layout_width="934px"
+                    android:layout_height="1dp"
+                    android:background="@color/color_public_background"/>
+                <!--安全手机-->
+                <com.mingjie.jf.view.Accountset_item
+                    android:id="@+id/safephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:background="@drawable/common_menu_item_bg"
+                    app:Accountset_Left_icon="@mipmap/safe_phone"
+                    app:Accountset_action="修改"
+                    app:Accountset_content_text="绑定手机"
+                    app:Accountset_status="未绑定"
+                    app:isShowStatus="true"/>
+
+                <View
+                    android:layout_marginLeft="148px"
+                    android:layout_width="934px"
+                    android:layout_height="1dp"
+                    android:background="@color/color_public_background"/>
+                <!--绑定邮箱-->
+                <com.mingjie.jf.view.Accountset_item
+                    android:id="@+id/bindEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:background="@drawable/common_menu_item_bg"
+                    app:Accountset_Left_icon="@mipmap/bind_email"
+                    app:Accountset_action="已绑定"
+                    app:Accountset_content_text="绑定邮箱"
+                    app:Accountset_status="未绑定"
+                    app:isShowStatus="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="22px"
+                    android:background="@color/color_public_background"/>
+
+                <!--登录密码-->
+                <com.mingjie.jf.view.Accountset_item
+                    android:id="@+id/modify_loginPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:background="@drawable/common_menu_item_bg"
+                    app:Accountset_Left_icon="@mipmap/login_pass"
+                    app:Accountset_action="修改"
+                    app:Accountset_content_text="登录密码"/>
+
+                <View
+                    android:layout_marginLeft="148px"
+                    android:layout_width="934px"
+                    android:layout_height="1dp"
+                    android:background="@color/color_public_background"/>
+                <!--手势密码-->
+                <RelativeLayout
+                    android:background="@drawable/common_menu_item_bg"
+                    android:id="@+id/accountset_picpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_accountset_status"
+                        android:layout_width="84px"
+                        android:layout_height="84px"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/pic_psw"/>
+
+                    <TextView
+                        android:id="@+id/tv_accountset_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/iv_accountset_status"
+                        android:text="手势密码"
+                        android:textSize="46px"/>
+
+                    <com.mingjie.jf.view.ToggleButton
+                        android:id="@+id/toggle_btn"
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="15dp"
+                        toggle:borderWidth="2dp"
+                        toggle:offBorderColor="#000"
+                        toggle:offColor="#ddd"
+                        toggle:onColor="#f00"
+                        toggle:spotColor="#00f"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="22px"
+                    android:background="@color/color_public_background"/>
+
+                <!--修改手势密码-->
+                <com.mingjie.jf.view.Accountset_item
+                    android:id="@+id/modify_picpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_menu_item_bg"
+                    android:visibility="gone"
+                    app:Accountset_Left_icon="@mipmap/modify_picpswd"
+                    app:Accountset_action="修改"
+                    app:Accountset_content_text="修改手势密码"/>
+
+                <!--我的客服-->
+                <com.mingjie.jf.view.Accountset_item
+                    android:id="@+id/my_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:background="@drawable/common_menu_item_bg"
+                    android:visibility="visible"
+                    app:Accountset_Left_icon="@mipmap/my_service"
+                    app:Accountset_action="选择"
+                    app:Accountset_content_text="我的客服"
+                    app:Accountset_status="未选择"
+                    app:isShowStatus="true"/>
+                <!--更多-->
+                <com.mingjie.jf.view.Accountset_item
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_menu_item_bg"
+                    app:Accountset_Left_icon="@mipmap/more"
+                    app:Accountset_action="查看"
+                    app:Accountset_content_text="更多"
+                    android:visibility="gone"
+                    app:isShowStatus="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="22px"
+                    android:background="@color/color_public_background"/>
+
+                <!--账户退出-->
+                <com.mingjie.jf.view.Accountset_item
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:background="@drawable/common_menu_item_bg"
+                    app:Accountset_Left_icon="@mipmap/logout"
+                    app:Accountset_action="退出"
+                    app:Accountset_content_text="账户退出"
+                    app:isShowStatus="true"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.mingjie.jf.widgets.RefreshLayout>
+</LinearLayout>

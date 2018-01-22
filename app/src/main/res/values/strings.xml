@@ -1,0 +1,283 @@
+<resources>
+    <string name="app_name">铭捷金服</string>
+    <string name="action_settings">Settings</string>
+    <string name="sending_request">请稍等...</string>
+    <string name="widget_quit_tv3">取消</string>
+    <string name="widget_quit_tv4">退出</string>
+    <!--进入v3系统-->
+    <string name="denglu">存管快线v3</string>
+    <string name="back_old_app">返回旧版</string>
+    <!-- 安全键盘 -->
+    <string name="keyboard_safe">铭捷金服安全输入</string>
+    <string name="keyboard_done">完成</string>
+
+    <!--首页 bottom_point-->
+    <string name="first">首页</string>
+    <string name="second">投资</string>
+    <string name="third">账户</string>
+    <string name="copyright">版权信息@2016铭捷财富（北京）互联网信息服务有限公司</string>
+    <string name="about_copyright">铭捷财富（北京）互联网信息服务有限公司 版权所有</string>
+
+    <!-- 我要投资产品列表标题-->
+    <string name="loan_list_title">散标投资</string>
+    <string name="transfer_list_title">债权转让</string>
+
+    <!-- 我要投资产品列表筛选条件-->
+    <string name="loan_screening_condition_about_latest">最新</string>
+    <string name="loan_screening_condition_about_rate">利率</string>
+    <string name="loan_screening_condition_about_term">期限</string>
+    <string name="loan_screening_condition_about_amount">金额</string>
+    <string name="transfer_screening_condition_about_expire_income_rate">到期净收益率</string>
+    <string name="transfer_screening_condition_about_surplus_term">剩余期数</string>
+
+    <!-- 借款信息tab标题-->
+    <string name="loan_info_about_loan_desc">借款描述</string>
+    <string name="loan_info_about_risk_info">风控信息</string>
+    <string name="loan_info_about_user_material">用户材料</string>
+
+    <!-- 多种状态切换view提示信息-->
+    <string name="network_loading_view_hint">努力加载中...</string>
+    <string name="empty_view_hint">暂无相关数据~~</string>
+    <string name="error_view_hint">加载失败，请重试~</string>
+    <string name="no_network_view_hint">网络不给力~</string>
+    <string name="not_more_data">无更多数据~</string>
+
+    <!-- 顶部工具栏ToolBar 标题-->
+    <string name="top_toolbar_title_investment">投资</string>
+    <string name="loan_detail_title">项目详情</string>
+    <string name="loan_detail_loan_info_title">借款信息</string>
+    <string name="loan_detail_repayment_plan_title">还款计划</string>
+    <string name="loan_detail_toubiao_record">投标记录</string>
+    <string name="buy_creditor_rights_title">收购债权</string>
+    <string name="income_calculator_title">收益计算器</string>
+
+    <!--注册勾选条款文字-->
+    <string name="register_tv1">我已阅读并同意</string>
+    <string name="register_tv2">《铭捷金服用户协议》</string>
+    <string name="register_tv2_title">铭捷金服用户协议</string>
+    <string name="register_tv14">推荐人(选填)</string>
+    <string name="register_tv13">获取验证码</string>
+    <string name="register_tv12">请输入验证码</string>
+    <string name="register_tv9">请输入用户名</string>
+    <string name="register_tv10">请输入6-20位密码</string>
+    <string name="register_tv11">请输入确认密码</string>
+    <string name="register_tv8">请输入手机号码</string>
+    <string name="register_tv15">请输入推荐人用户名</string>
+
+    <!--登入界面-->
+    <string name="login_tv1">请输入用户名/手机号/邮箱</string>
+    <string name="login_tv2">请输入密码</string>
+    <string name="login_tv3">验证码</string>
+    <string name="login_tv4">登 录</string>
+    <string name="login_tv5">忘记密码？</string>
+    <string name="login_tv6"><![CDATA[免费注册>>]]></string>
+    <string name="left_menu_tv1">未登录</string>
+
+    <!--重置密码页面文字-->
+    <string name="resetpass_tv1">请输入6-20位密码</string>
+    <string name="resetpass_tv2">请输入确认密码</string>
+    <string name="resetpass_tv3">请输入短信验证码</string>
+    <string name="resetpass_tv4">获取验证码</string>
+    <string name="resetpass_tv5">确定</string>
+    <string name="resetpass_tv6">请输入用户名</string>
+    <string name="resetpass_tv7">请输入手机号码</string>
+    <string name="resetpass_tv8">请输入验证码</string>
+    <!--账户设置-->
+    <string name="enter_email">请输入邮箱</string>
+    <string name="the_old_celphone_is">原手机号码135xxxx1234</string>
+    <string name="yezhen_the_old_celphone_is">验证已通过，请填写你的新号码</string>
+    <string name="new_email">身份验证已通过，请填写你的新邮箱地址，请查收</string>
+    <string name="old_pwd">原始登录密码</string>
+    <string name="new_pwd">新登录密码</string>
+    <string name="new_pwd2">确认登录密码</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="acc_register">开通</string>
+    <string name="acc_unregister">未开通</string>
+    <string name="deposit_account">存管账户</string>
+    <string name="acc_authenticate">认证</string>
+    <string name="modify">修改</string>
+    <string name="bind_celphone">绑定手机</string>
+    <string name="bind">绑定</string>
+    <string name="bind_email">绑定邮箱</string>
+    <string name="not_bind">未绑定</string>
+    <string name="acc_login_pwd">登录密码</string>
+    <string name="gesture_password">手势密码</string>
+    <string name="modify_gesture_password">修改手势密码</string>
+    <string name="more">更多</string>
+    <string name="acc_logout">账户退出</string>
+    <string name="real_name_verify">实名认证</string>
+    <string name="not_verified">未认证</string>
+    <string name="obtain_identifying_code">获取验证码</string>
+    <string name="identifying_code">手机验证码</string>
+    <string name="new_celphone_num">新手机号码</string>
+    <string name="login_pwd">登录密码</string>
+    <string name="next_step">下一步</string>
+    <string name="confirm">确定</string>
+    <string name="enter_new_email">填写新邮箱</string>
+
+    <!--充值-->
+    <string name="recharge_name">请输入充值金额</string>
+    <string name="recharge_btn">确定</string>
+    <string name="chonzhi">1、充值需先绑定银行卡,\n2、请选择合适的充值方式:\n
+        方法一：通过E账户充值，需先通过本人银行卡转账（手机银行、网上银行、银行柜台都可）至您的华兴银行E账户中，然后进行充值（5-10分钟内到账）\n
+        方法二：通过已绑定的银行卡直接充值（T+1工作日到账）\n
+        3、充值手续费：充值若产生手续费由您选择的充值方收取，我司不加收任何费用。</string>
+    <string name="tixian">1、提现全程免费，请选择合适的提现方式;\n2、可选择提现到已绑定银行卡内网银互联：小于5万元的实时到账小额：5-50万以内，2小时到账大额：50万以上8:30~16:19工作日内实时到账，其余时间不受理
+        \n3、可选择提现至华兴银行资金存管E账户，提现实时到账;
+</string>
+    <string name="tixian_guide">为保障您的资金安全，新客户首次资金转出，请通过华兴投融资平台APP进行实名认证后操作.</string>
+    <!--开通存管-->
+    <string name="realname">真实姓名</string>
+    <string name="idname">身份证</string>
+    <string name="open_deposit_account">立即开通存管账户</string>
+    <string name="open_deposit_advantage">开通银行存管有什么优势?</string>
+
+    <!--图形锁-->
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"设置手势密码"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"确认手势密码"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+
+    <!-- 自动投标-->
+    <string name="auto_invest_set">自动投标设置</string>
+    <string name="auto_invest_keep">账户保留余额：</string>
+    <string name="auto_invest_max">每次投资金额：</string>
+    <string name="auto_invest_min">还款方式：</string>
+    <string name="yuan">元</string>
+    <string name="yuan2">%1$s元</string>
+    <string name="yuan_money">%1$s元现金券</string>
+    <string name="jiaxi">%1$s%%加息券</string>
+    <string name="repurchase_mode_and">借款期限：</string>
+    <string name="profit">年化收益：</string>
+    <string name="save_modify">保存</string>
+    <string name="auto_invest_rule">自动投标规则：\n1.需通过实名认证及绑定银行卡，且可用余额需大于100元才可开启自动投标。
+        \n2.启用自动投标，则进入自动投标队列末尾。
+        \n3.停止自动投标，则从自动投标列出队。
+        \n4.修改自动投标条件不影响自动投标排队情况。
+        \n5.当新的借款标的进入招标时，系统从自动投标队列队首开始依次执行自动投标;
+        \n满足条件成功投标的用户将出队并立即重新进入到队尾;不满足条件未成功投标的用户保留在队列的原有位置。</string>
+
+    <!-- 收益计算器 -->
+    <string name="menuTool_toast1">请输入投资金额！</string>
+    <string name="menuTool_toast2">请输入年利率！</string>
+    <string name="menuTool_toast3">请输入投资期限！</string>
+    <string name="menuTool_toast4">投资金额范围1.00～8,000,000.00元！</string>
+    <string name="menuTool_toast5">请选择还款方式！</string>
+    <string name="menuTool_toast6">请输入服务费率！</string>
+    <string name="menuTool_toast7">输入年收益率超出范围（1.00～24.00%）！</string>
+    <string name="menuTool_toast8">输入投资期限超出范围（1～60个月）！</string>
+    <string name="menuTool_toast9">输入投资期限超出范围（1～720天）！</string>
+    <string name="menuTool_toast10">输入服务费率超出范围（0.00～24.00%）！</string>
+
+    <!-- 创业小伙伴提成-->
+    <string name="date">日期</string>
+    <string name="commission_money">提成金额</string>
+    <string name="direct_commission">直接提成</string>
+    <string name="indirect_commission">间接提成</string>
+    <string name="state">状态</string>
+    <string name="sum_commision">累计提成</string>
+    <string name="direct_rec_commision">直接推荐提成</string>
+    <string name="month_commision">本月提成</string>
+    <string name="indirect_rec_commision">间接推荐提成</string>
+    <string name="sum_net_income">累计净待收总额</string>
+    <string name="hold">待发</string>
+
+    <!-- 我的推荐-->
+    <string name="recommend_name">推荐好友注册才要您的用户名：</string>
+    <string name="share_url">分享链接</string>
+    <string name="recommended_name">被推荐人用户</string>
+    <string name="recommend_relation">推荐关系</string>
+    <string name="touzi_money">投资金额</string>
+    <string name="register_time">注册时间</string>
+    <string name="share_title">铭捷金服-安全看得见 互联网汽车金融</string>
+    <string name="share_text">铭捷金服让财富升值变得如此简单！快来加入我们吧！</string>
+
+    <!-- 创业小伙伴-->
+    <string name="celebrate">恭喜您已成为创业小伙伴！</string>
+    <string name="celebrate_explain">邀请好友注册并投资，推荐人可获得其推荐下属两级投资额一定比例的奖励,\n每个推荐人的收益将在第三层后终结,具体如下:</string>
+
+    <!--服务器请求异常-->
+    <string name="service_err">请求异常，请重试</string>
+    <string name="nullDatas">没有数据</string>
+    <string name="nodata">没有数据</string>
+    <string name="netError">网络错误，点击重试!</string>
+    <string name="notNet">网络不可用!</string>
+    <string name="PageInit">页面正在初始化!</string>
+    <string name="noLoadMore">没有更多数据</string>
+    <string name="loadMoreFinsh">加载完成</string>
+    <string name="refreshFinsh">刷新完成</string>
+    <string name="dataError">数据获取失败，请重试!</string>
+    <string name="service_err2">请求异常,点击重试</string>
+    <string name="dataError2">数据获取失败，点击重试!</string>
+    <string name="network_unused_retry_pls">当前网络不可用，请重试！</string>
+    <string name="refreshed">刷新完成</string>
+    <string name="nodata2">暂无数据</string>
+    <string name="shoukuanjihua">收款计划</string>
+    <string name="jiekuanxieyi">借款协议</string>
+    <string name="chujiexiyi">出借人咨询服务协议</string>
+    <!--回款列表-->
+    <string name="return_list">回款列表</string>
+
+    <!--还款列表-->
+    <string name="repay_list">还款列表</string>
+
+    <string name="issue">期次%1$s/%2$s</string>
+
+    <!--我的优惠券-->
+    <string name="coupon_list">我的优惠券</string>
+    <string name="coupon_amount">￥%1$s</string>
+    <string name="bestowal_date">发放日期：%1$s</string>
+    <string name="expiry_date">失效日期：%1$s</string>
+    <string name="get_date">领取日期：%1$s</string>
+    <string name="amount_limit">使用门槛：%1$s元及以上</string>
+    <string name="use_scope">使用范围：%1$s</string>
+    <string name="date_limit">投资标的期限：%1$s及以上</string>
+    <string name="use_date">使用日期：%1$s</string>
+    <string name="get_success">领取成功！</string>
+    <string name="expire_time">预期下期收益时间：%1$s</string>
+
+    <!--创业小伙伴-->
+    <string name="text_01">邀请好友注册并投资，推荐人可获得其推荐下属两级投资额一定比例的奖励，每个推荐人的收益将在第三层后终结，具体如下：</string>
+    <string name="text_02">1、必须成铭捷金服的实名注册用户</string>
+    <string name="text_03">邀请好友投资即可获得直接推荐好友待收本金的0.1%作为提成奖励</string>
+    <string name="text_04"> 2、奖励发放时间：申请通过创业小伙伴的次月开始，每月1日发放上月提成</string>
+    <string name="text_05">目前产品系数默认为1，直接推荐好友待收本金以每个月最后一天23:59:59的待收本金计算</string>
+    <string name="text_06">3、相关参数：</string>
+    <string name="text_07">   a、待收本金以每个月最后一天23:59:59前的待收本金计算（当月最后一日超过23:59:59投资将顺延到下个月计算）</string>
+    <string name="text_17">    b、直接推荐提成比例为 0.10％；间接推荐提成比例为 0.04％</string>
+    <string name="text_27">    c、目前产品系数默认为1</string>
+    <string name="text_08">温馨提醒：</string>
+    <string name="text_11">特别说明：</string>
+    <string name="text_12">1、必须成为铭捷金服的实名注册用户。\n2、累计推荐注册会员达2个以上，即可主动申请成为创业小伙伴。\n3、认可铭捷金服并愿意与我们共同发展。\n4、如不符合申请条件，审核不通过。则7天后方可再次申请。</string>
+    <string name="text_09">1、2017年1月1日前已成功申请创业小伙伴的用户，提成计算及发放也按此公告规则执行。后续推荐方案若有修改平台另行通知。</string>
+    <string name="text_10">2、本次活动最终解释权归铭捷财富（北京）互联网信息服务有限公司，如有疑问，请联系在线客服，或致电4008076777。</string>
+
+    <!--标的详情-->
+    <string name="invest_money">投资金额:</string>
+    <string name="cash_coupon">优&#160;&#160;惠&#160;&#160;券:</string>
+    <string name="total_earnings">总收益：%1$s元</string>
+    <string name="total_earnings2">总收益：%1$s元(利息%2$s元+现金券%3$s元)</string>
+    <string name="total_earnings3">总收益：%1$s元(利息%2$s元+加息券%3$s元)</string>
+    <string name="use_coupon">使用现金券%1$s元</string>
+    <string name="use_proportion">使用加息券%1$s%%</string>
+    <string name="no_cash">暂无可用的优惠券</string>
+    <string name="select_cash">请选择优惠券</string>
+    <string name="cash_amount">金额</string>
+    <string name="start_amount">起投金额</string>
+    <string name="end_time">失效日期</string>
+    <string name="err_min_amount">所选优惠券最低投标金额为：%1$s元</string>
+
+</resources>

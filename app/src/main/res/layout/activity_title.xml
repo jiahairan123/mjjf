@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5aafff"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/fan"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left">
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x50"
+            android:src="@mipmap/backwhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boss_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/hear_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人登录"
+            android:textColor="@color/white"
+            android:textSize="60px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hear_right_linear"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/hear_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/x50"
+            android:text="其他"
+            android:visibility="gone"
+            android:textColor="#999999"
+            android:textSize="14.7sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

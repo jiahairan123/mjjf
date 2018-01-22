@@ -1,0 +1,252 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowBackground">@mipmap/splash_image</item>-->
+    </style>
+
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@color/sc_transparent_background</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+    <!--宽和高都是wrap-->
+    <style name="width_and_height_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!--收益计算器-->
+    <style name="calculator_tv_detail">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="calculator_tv_calculator_number">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="calculator_tv_type">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="calculator_btn_type">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/select_counter</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="content_margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <!--验证码图片-->
+    <style name="ResetPass_iv1">
+        <item name="android:layout_width">@dimen/x320</item>
+        <item name="android:layout_height">@dimen/y130</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <!--退出对话框-->
+    <style name="Quit_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Quit_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 首页radiobutton -->
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:paddingTop">9dp</item>-->
+        <item name="android:textColor">@drawable/tab_bottom_menu_textcolor</item>
+        <item name="android:textSize">26px</item>
+    </style>
+
+    <!--公共标题-->
+    <style name="public_title_iv_left">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="public_title_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="public_title_iv2">
+        <!--<item name="android:background">?android:attr/selectableItemBackground</item>-->
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+
+    <style name="public_title_iv3">
+        <!--<item name="android:background">?android:attr/selectableItemBackground</item>-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <!--修改密码界面-->
+    <style name="modify_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/select_register_btn</item>
+    </style>
+
+    <!-- 首页运行时间、交易数据，设置不同的字体大小和颜色-->
+    <style name="home_tv_big_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff6735</item>
+    </style>
+
+    <style name="home_tv_small_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ff6735</item>
+    </style>
+
+    <!--首页轮播图点-->
+    <style name="Dot_home">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AppSplash" parent="android:Theme">
+        <item name="android:windowBackground">@mipmap/splash_image</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--宽和高都是wrap-->
+    <style name="width_height_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 指定账户设置里面popupWindow动画效果 -->
+    <style name="popwindow_avatar_set_anim_style">
+        <!-- 指定popupWindow显示的动画 -->
+        <item name="android:windowEnterAnimation">@anim/popshow_avatar_set</item>
+
+        <!-- 指定popupWindow消失的动画 -->
+        <item name="android:windowExitAnimation">@anim/pophidden_avatar_set</item>
+    </style>
+
+    <!-- 为 Theme 设置背景图 -->
+    <!--<style name="Splash_Theme" parent="@android:style/Theme.NoTitleBar">-->
+        <!--<item name="android:windowBackground">@mipmap/splash_image</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+    <!--</style>-->
+    <style name="Splash_Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="bindcard_et">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120px</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+
+    <style name="text_style0">
+        <item name="android:textSize">16sp</item>
+        <!--<item name="android:textColor">@color/color1</item>-->
+    </style>
+
+    <style name="text_style1">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="text_style2">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_style3">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_black_light</item>
+    </style>
+
+    <style name="text_style4">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_public_red</item>
+    </style>
+
+    <style name="text_style5">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/color_black_light</item>
+    </style>
+
+    <style name="text_style6">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/color_public_red</item>
+    </style>
+</resources>

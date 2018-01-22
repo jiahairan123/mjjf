@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/common_menu_item_bg"
+                android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relative_home_notice"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/y150"-->
+    <!--android:layout_marginBottom="@dimen/y20"-->
+    <!--android:layout_marginTop="@dimen/y20"-->
+    <!--android:paddingLeft="@dimen/x30">-->
+    <!--&lt;!&ndash;公告喇叭&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_home_notice"-->
+    <!--android:layout_width="@dimen/x62"-->
+    <!--android:layout_height="@dimen/y48"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:src="@mipmap/told_2"/>-->
+
+    <!--&lt;!&ndash;右侧箭头&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_home_arrow"-->
+    <!--android:layout_width="@dimen/x30"-->
+    <!--android:layout_height="@dimen/y48"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="@dimen/x30"-->
+    <!--android:src="@mipmap/right_arrow_icon"/>-->
+
+    <!--&lt;!&ndash;最新公告&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/told_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_toLeftOf="@id/iv_home_arrow"-->
+    <!--android:layout_toRightOf="@id/iv_home_notice"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:maxEms="10"-->
+    <!--android:singleLine="true"-->
+    <!--android:ellipsize="end"-->
+    <!--android:text="升级通知升通知升级通知升级">-->
+    <!--</TextView>-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2px"-->
+    <!--android:layout_marginTop="@dimen/y100"-->
+    <!--android:background="#F0F1F5"/>-->
+    <!--</RelativeLayout>-->
+
+
+    <!--右侧箭头-->
+    <ImageView
+        android:id="@+id/iv_home_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/right_arrow_icon"/>
+
+    <LinearLayout
+        android:id="@+id/relative_home_notice"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_toLeftOf="@id/iv_home_arrow"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp">
+
+        <!--公告title-->
+        <TextView
+            android:id="@+id/told_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/told_2"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <!--公告时间-->
+        <TextView
+            android:id="@+id/tv_sysnotice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/color_action_light"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="2px"
+    android:layout_marginTop="58dp"
+    android:background="#F0F1F5"/>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="200dp"
+              android:layout_gravity="center"
+              android:background="@drawable/shape_quit_dialog"
+              android:orientation="vertical"
+              android:paddingTop="20dp">
+
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        style="@style/width_height_wrap"
+        android:layout_gravity="center_horizontal"
+        android:text="正在下载新版本"
+        android:textSize="22sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.mingjie.jf.widgets.UpdateProgress
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/progress_normal"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_quit_cutline"/>
+
+
+    <Button
+
+        android:id="@+id/btn_dialog_quitapp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/select_update_dialog_btn"
+        android:text="退出程序"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>

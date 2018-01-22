@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="15dp">
+
+    <TextView
+        android:id="@+id/tv_counter_fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/et_counter_fashion_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_counter_fashion"
+        android:background="@null"
+        android:clickable="true"
+        android:enabled="true"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:maxLength="15"
+        />
+
+    <!--箭头-->
+    <ImageView
+        android:id="@+id/iv_counter_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:src="@mipmap/down_arrow_icon"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_counter_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:focusable="false"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:visibility="visible"
+        />
+</RelativeLayout>

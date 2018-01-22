@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_blue"/>
+
+    <!--华兴账户-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="134px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x62"
+            android:text="华兴E账户："
+            android:textSize="48px"/>
+
+        <TextView
+            android:id="@+id/acno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="46px"/>
+
+        <TextView
+            android:id="@+id/fuzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/select_btn_buy_product"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:text="复制"
+            android:textColor="@drawable/select_text_buy_product"
+            android:textSize="36px"/>
+
+    </LinearLayout>
+
+    <!--华兴账户-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x62"
+        android:layout_marginTop="@dimen/y58"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓       名："
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/acname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <!--证件类型-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x62"
+        android:layout_marginTop="@dimen/y58"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件类型："
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/idtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <!--华兴账户-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x62"
+        android:layout_marginTop="@dimen/y58"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件号码："
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/idno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12345612364565555"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <!--温馨提示-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x62"
+        android:layout_marginTop="@dimen/y242">
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示:"
+            android:textColor="@color/color_red_light"
+            android:textSize="44px"/>
+
+        <TextView
+            android:id="@+id/ext_filed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/point"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_toEndOf="@+id/point"
+            android:layout_toRightOf="@+id/point"
+            android:text="您的账户信息已通过审核！"
+            android:textSize="44px"/>
+    </RelativeLayout>
+
+</LinearLayout>
+

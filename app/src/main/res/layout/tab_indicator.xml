@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/tab_indicator_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--图标-->
+            <ImageView
+                android:id="@+id/tab_indicator_iv_icon"
+                android:layout_width="88px"
+                android:layout_height="88px"
+                android:layout_gravity="center"
+                android:src="@drawable/select_tab_home" />
+
+            <!--文本-->
+            <TextView
+                android:id="@+id/tab_indicator_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2px"
+                android:singleLine="true"
+                android:text="title"
+                android:textColor="#9c9b9b"
+                android:textSize="26px" />
+
+        </LinearLayout>
+
+        <!--未读数-->
+        <TextView
+            android:id="@+id/tab_indicator_tv_unread"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="-12dp"
+            android:layout_toRightOf="@id/tab_indicator_content"
+
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="99+"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

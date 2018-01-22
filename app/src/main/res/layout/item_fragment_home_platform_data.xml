@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="horizontal"
+              android:visibility="gone"
+              android:padding="4dp">
+    <!--累计投资金额-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="累计成交金额"
+            android:textColor="@color/color_black_light"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_sunamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="___元"
+                android:textColor="@color/color_orgen_light"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="元"-->
+            <!--android:visibility="visible"-->
+            <!--android:textColor="@color/color_orgen_light"-->
+            <!--android:textSize="28px" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color_public_division"/>
+    <!--总成交笔数-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册用户总量"
+            android:textColor="@color/color_black_light"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_home_totalrenCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="___人"
+                android:textColor="@color/color_orgen_light"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="元"-->
+            <!--android:visibility="visible"-->
+            <!--android:textColor="@color/color_orgen_light"-->
+            <!--android:textSize="28px" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

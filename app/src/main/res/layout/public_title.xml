@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/public_title_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y156">
+    <!--左边的按钮-->
+    <ImageView
+        android:id="@+id/iv_Left_public"
+        style="@style/public_title_iv_left"
+        android:src="@mipmap/backwhite" />
+
+    <!--中间的标题-->
+    <TextView
+        android:id="@+id/tv_content_public"
+        style="@style/public_title_tv" />
+
+    <!--右边的按钮-->
+    <ImageView
+        android:id="@+id/iv_right_public"
+        style="@style/public_title_iv2" />
+
+    <TextView
+        android:id="@+id/tv_right_public"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="历史"
+        android:textColor="@android:color/white"
+        android:textSize="21sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_right_public2"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="历史"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="gone"
+        />
+
+    <!--跳转v3-->
+    <Button
+        android:id="@+id/bt_openv3"
+        android:layout_width="wrap_content"
+        android:layout_height="85px"
+        android:layout_alignBottom="@+id/tv_account_username"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40px"
+        android:background="@drawable/button_selector_back"
+        android:text="@string/back_old_app"
+        android:textColor="@drawable/select_text_account_btn"
+        android:textSize="34px"
+        android:visibility="gone"
+        />
+</RelativeLayout>

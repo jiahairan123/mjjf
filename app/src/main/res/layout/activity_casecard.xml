@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/public_title_blue"/>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/swipe_account_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_comd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80px"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="你的账户尚未绑定任何银行卡 立即绑定"
+                        android:textColor="@color/red"/>
+
+                    <TextView
+                        android:id="@+id/tv_card_selectbank"
+                        android:layout_width="match_parent"
+                        android:layout_height="120px"
+                        android:layout_marginTop="80px"
+                        android:background="@color/white"
+                        android:drawableRight="@mipmap/person_arrow_down"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="所属银行"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorline"/>
+
+                    <EditText
+                        android:id="@+id/et_card_banknumber"
+                        style="@style/bindcard_et"
+                        android:hint="请输入您的银行卡号码"
+                        android:inputType="number"
+                        android:maxLength="25"
+                        android:numeric="integer"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorline"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120px"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_card_selectprovince"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:drawableRight="@mipmap/person_arrow_down"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="所在地"/>
+
+                        <TextView
+                            android:id="@+id/tv_card_selectcity"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:drawableRight="@mipmap/person_arrow_down"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text=""/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorline"/>
+
+                    <EditText
+                        android:id="@+id/tv_card_bank"
+                        style="@style/bindcard_et"
+                        android:hint="请输入您的银行卡开户行"
+                        android:singleLine="true"
+                        android:maxLength="50"
+                        />
+
+                    <View
+                        android:layout_width="882px"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorline"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120px"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <EditText
+                            android:id="@+id/et_card_verifycode"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.8"
+                            android:background="@color/white"
+                            android:gravity="center|left"
+                            android:hint="请输入短信验证码"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:numeric="integer"
+                            android:paddingLeft="10dp"
+                            android:textSize="15sp"/>
+
+                        <Button
+                            android:id="@+id/btn_card_getcode"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/user_login_edtext"
+                            android:text="获取验证码"
+                            android:textColor="@android:color/white"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorline"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/cbk_agree_protocol"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:checked="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我已阅读并同意《"/>
+
+                <TextView
+                    android:id="@+id/tv_bindCard_protocl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="委托代扣协议"
+                    android:textColor="@color/color_register_pro"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="》"/>
+            </LinearLayout>
+            <!--登录-->
+            <com.mingjie.jf.view.MateralButton
+                android:id="@+id/btn_tobind"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="120px"
+                android:background="@drawable/user_login_edtext"
+                android:text="绑定"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                />
+            <!--提示-->
+            <include
+                layout="@layout/bindcard_comd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+<!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>

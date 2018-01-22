@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <!--我要投资-->
+    <include layout="@layout/public_title_blue"/>
+
+    <!--我要投资-->
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/invest_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/left_menu_text"
+        app:pstsIndicatorColor="@color/colorPrimaryDark"
+        app:pstsIndicatorHeight="4dp" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_ivest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_public_background"/>
+</LinearLayout>
